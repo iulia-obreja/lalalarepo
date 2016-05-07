@@ -14,7 +14,45 @@
       <version>3.8.1</version>
       <scope>test</scope>
     </dependency>
+
+    <!--JSF dependencies-->
+      <dependency>
+        <groupId>com.sun.faces</groupId>
+        <artifactId>jsf-api</artifactId>
+        <version>2.2.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>com.sun.faces</groupId>
+        <artifactId>jsf-impl</artifactId>
+        <version>2.2.2</version>
+      </dependency>
+
+      <dependency>
+        <groupId>javax.servlet</groupId>
+        <artifactId>javax.servlet-api</artifactId>
+        <version>3.0.1</version>
+      </dependency>
+
+
+    <!--Prime Faces dependency-->
+      <dependency>
+        <groupId>org.primefaces</groupId>
+        <artifactId>primefaces</artifactId>
+        <version>5.3</version>
+      </dependency>
   </dependencies>
+
+  <!--Prime Faces repo-->
+  <repositories>
+    <repository>
+      <id>prime-repo</id>
+      <name>PrimeFaces Maven Repository</name>
+      <url>http://repository.primefaces.org</url>
+      <layout>default</layout>
+    </repository>
+  </repositories>
+
   <build>
     <finalName>course-allocations</finalName>
   </build>
