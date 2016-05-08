@@ -1,0 +1,11 @@
+#login-form-container .test-panel .ui-widget-header {
+    background-color: aqua !important;
+}
+
+#login-form-container{
+    width: 600px;
+}
+
+.panel-grid{
+    padding-left: 100px;
+}
