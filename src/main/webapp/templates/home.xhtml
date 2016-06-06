@@ -5,21 +5,22 @@
       xmlns:h="http://java.sun.com/jsf/html"
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:p="http://primefaces.org/ui">
+
 <h:head>
-    <title>JSF Tutorial!</title>
+    <title>Sign in</title>
     <script name="jquery/jquery.js" library="primefaces" type="text/javascript"></script>
 
 </h:head>
 
-<h:body>
+<h:body class="body">
 <h:outputStylesheet name="css/home.css"  />
 <div id="login-form-container">
     <h:form class="test-panel">
-        <p:panel id="login" header="Login">
+        <p:panel id="login">
             <h:panelGrid class="panel-grid">
-                <p:inputText  />
-                <p:inputText />
-                <p:commandButton value="Submit"  />
+                <p:inputText placeholder="Name"/>
+                <p:password placeholder="Password"/>
+                <p:commandButton value="Sign in" />
             </h:panelGrid>
         </p:panel>
     </h:form>

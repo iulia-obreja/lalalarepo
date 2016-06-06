@@ -1,0 +1,10 @@
+.body{
+    font-family: Helvetica;
+    background: #eee;
+    -webkit-font-smoothing: antialiased;
+
+}
+
+#basic{
+    height: 100% !important;
+}

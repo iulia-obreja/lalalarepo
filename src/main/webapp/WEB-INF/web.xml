@@ -11,7 +11,7 @@
     <display-name>Archetype Created Web Application</display-name>
 
     <welcome-file-list>
-        <welcome-file>faces/templates/home.xhtml</welcome-file>
+        <welcome-file>faces/templates/admin.xhtml</welcome-file>
     </welcome-file-list>
 
 

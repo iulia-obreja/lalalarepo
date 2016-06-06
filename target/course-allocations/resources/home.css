@@ -1,0 +1,54 @@
+.body{
+    font-family: Helvetica;
+    background: #eee;
+    -webkit-font-smoothing: antialiased;
+}
+
+#login-form-container{
+    width: 360px;
+    margin: 4em auto;
+    margin-top: 10em;
+    box-shadow: rgba(0, 0, 0, 0.14902) 0px 1px 1px 0px, rgba(0, 0, 0, 0.09804) 0px 1px 2px 0px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+.ui-button {
+    padding: 7px;
+    margin: 1.3em 0 1em 0;
+    width: 100%;
+    -webkit-font-smoothing: antialiased;
+    letter-spacing: 1px;
+    border-bottom: 2px solid #3160B6;
+    cursor: pointer;
+    transition: all 0.15s ease;
+    background: #4a89dc !important;
+    text-shadow: 1px 1px 0 rgba(39, 110, 204, .5) !important;
+    top:0;
+    color: white !important;
+}
+
+.ui-button:hover {
+    background: #357bd8;
+}
+
+.panel-grid{
+    padding: 40px;
+}
+
+
+.ui-inputfield{
+    margin-bottom: 0.7em;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    height: 35px;
+}
+
+.ui-state-default{
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+}
