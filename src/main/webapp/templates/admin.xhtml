@@ -6,41 +6,87 @@
       xmlns:f="http://java.sun.com/jsf/core"
       xmlns:p="http://primefaces.org/ui">
 
-
 <h:head>
     <title>Admin</title>
     <script name="jquery/jquery.js" library="primefaces" type="text/javascript"></script>
+    <script src="../resources/js/clientSideValidations.js" library="js" type="text/javascript"/>
 </h:head>
 
 <h:body class="body">
+
     <f:facet name="last">
         <h:outputStylesheet name="css/admin.css"/>
     </f:facet>
 
-    <h:form>
+
+    <h:form id="parent" styleClass="whole-content">
+
         <p:menubar>
-            <p:menuitem><h:graphicImage id="fii-logo" value="resources/images/fii-logo.png"/></p:menuitem>
+            <p:menuitem><h:graphicImage value="/resources/images/fii-logo.png"/></p:menuitem>
 
-            <p:submenu label="Optionale">
-                <p:menuitem value="Adauga"></p:menuitem>
-
-                <p:menuitem value="Vizualizeaza" url="#"/>
-
-                <p:separator/>
-
-                <p:menuitem value="Posteaza" url="#"/>
-            </p:submenu>
-
-            <p:menuitem  value="Proceseaza cereri" url="#">
+            <p:menuitem value="Gestioneaza optionale" url="">
             </p:menuitem>
 
-            <p:menuitem value="Algoritmul SM" url="#">
+            <p:menuitem value="Proceseaza cereri" immediate="true" action="#{navController.goToProcesare()}">
             </p:menuitem>
 
+            <p:menuitem value="Algoritmul Stable Matching" url="#{navController.goToAlgoritm()}">
+            </p:menuitem>
 
-            <p:menuitem value="Logout" url="#"></p:menuitem>
-
+            <p:menuitem value="Logout" immediate="true" action="#{loginCtrl.logout()}">
+            </p:menuitem>
         </p:menubar>
+
+
+
+        <p:panel styleClass="pagePanelContent">
+            <h:panelGrid columns="1" styleClass="centered">
+                <p:commandButton value="Informatii primare adaugare optionale" type="button"
+                                 onclick="PF('modal3').show();"/>
+                <p:commandButton id="showButton" value="Adauga optionale" disabled="#{preFormCtrl.buttonDisabled}"
+                                 type="button" onclick="PF('modal1').show();"/>
+                <p:commandButton disabled="#{formCtrl.isDisableVeziOptionaleButton()}" value="Vizualizeaza si posteaza optionale"
+                                 type="button" onclick="PF('modal2').show();"/>
+            </h:panelGrid>
+
+            <p:dialog header="Formular adaugare optionale" widgetVar="modal1" modal="true" closable="false"
+                      maximizable="false" minimizable="false">
+
+                <ui:include src="../templates/semestrul1Form.xhtml"></ui:include>
+
+                <ui:include src="../templates/semestrul2Form.xhtml"></ui:include>
+
+                <div class="row okButtonContainer">
+                    <p:commandButton value="Ok" styleClass="okButton" id="OKButtonOptionale"
+                                     actionListener="#{formCtrl.onOkButtonOptionalePressed()}"
+                                     onclick="modal1.hide()"></p:commandButton>
+                </div>
+            </p:dialog>
+
+            <p:dialog header="Optionalele completate pana acum" widgetVar="modal2" modal="true" maximizable="false"
+                      minimizable="false">
+                <ui:include src="../templates/vizualizeazaOptionale.xhtml"></ui:include>
+
+                <div class="row okButtonContainer">
+                    <p:commandButton value="Posteaza"
+                                     actionListener="#{formCtrl.onPosteazaButtonClick()}" onclick="modal2.hide()">
+                    </p:commandButton>
+                </div>
+            </p:dialog>
+
+            <p:dialog header="Informatii necesare formularului de adaugare optionale" widgetVar="modal3" modal="true"
+                      maximizable="false" minimizable="false">
+                <ui:include src="../templates/preForm.xhtml"></ui:include>
+                <div class="row okButtonContainer">
+                    <p:commandButton value="Ok" styleClass="okButton" id="OKButton"
+                                     disabled="#{preFormCtrl.isOkButtonDisabled()}"
+                                     actionListener="#{preFormCtrl.onOkButtonClick}" onclick="modal3.hide()">
+                    </p:commandButton>
+                </div>
+            </p:dialog>
+        </p:panel>
     </h:form>
+
+
 </h:body>
 </html>

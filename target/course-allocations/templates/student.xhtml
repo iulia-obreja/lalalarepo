@@ -1,0 +1,39 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:ui="http://java.sun.com/jsf/facelets"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui">
+
+
+<h:head>
+    <title>Students</title>
+    <script name="jquery/jquery.js" library="primefaces" type="text/javascript"></script>
+</h:head>
+
+<h:body class="body">
+
+    <f:facet name="last">
+        <h:outputStylesheet name="css/admin.css"/>
+        <h:outputStylesheet name="css/preForm.css"/>
+    </f:facet>
+
+    <h:form id="parent" styleClass="whole-content">
+        <p:menubar>
+            <p:menuitem><h:graphicImage value="/resources/images/fii-logo.png"/></p:menuitem>
+
+            <p:menuitem value="Cursuri optionale" url="#"></p:menuitem>
+
+            <p:menuitem value="Logout" url="#{loginCtrl.logout()}"></p:menuitem>
+        </p:menubar>
+        <p:panel styleClass="pagePanelContent">
+            <h:panelGrid columns="1" styleClass="centered centeredStudentPage">
+                <h:panelGroup>
+                    <ui:include src="vizualizeazaOptionale.xhtml"></ui:include>
+                </h:panelGroup>
+            </h:panelGrid>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>

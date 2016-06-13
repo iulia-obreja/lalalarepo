@@ -1,0 +1,89 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:c="http://java.sun.com/jsp/jstl/core"
+        xmlns:h="http://java.sun.com/jsf/html"
+        xmlns:f="http://java.sun.com/jsf/core">
+
+    <h:outputStylesheet name="css/preForm.css"/>
+    <p:growl id="growl" life="5000" widgetVar="growlWV"/>
+
+    <div class="row anContainer">
+        <p:outputLabel for="an" value="An de studiu: "/>
+        <p:inputText id="an" value="#{preFormCtrl.year}" required="true"
+                     onblur="validateNumberInput('an')">
+            <p:ajax event="keyup" update="OKButton"></p:ajax>
+        </p:inputText>
+    </div>
+
+
+    <div class="row">
+        <p:panel styleClass="subjectsGrid opPanel pPanelPreForm" header="Semestrul 1" toggleable="true">
+            <div class="row">
+                <p:outputLabel for="pacheteS1" value="Numar pachete: "/>
+                <p:inputText id="pacheteS1" value="#{preFormCtrl.numberPackagesSem1}" required="true"
+                             onblur="validateNumberInput('an')">
+                    <p:ajax event="keyup" listener="#{preFormCtrl.onKeyUpNumberPSem1()}"
+                            update="eachPackageSem1 OKButton"></p:ajax>
+                </p:inputText>
+            </div>
+
+            <div class="row">
+                <p:panel styleClass="subjectsGrid" id="eachPackageSem1">
+                    <p:panel styleClass="subjectsGrid" rendered="#{preFormCtrl.renderPanelS1()}">
+                        <c:forEach var="item"
+                                   varStatus="status"
+                                   begin="1"
+                                   end="#{preFormCtrl.getNumberPSem1()}">
+                            <p:fieldset styleClass="pachetPanel" legend="#{'Pachet '.concat(item)}">
+                                <p:outputLabel for="#{'numberP'.concat(item)}" value="Numar optionale "></p:outputLabel>
+                                <p:inputText id="#{'numberP'.concat(item)}"
+                                             value="#{preFormCtrl.subjectsSem1[status.index - 1]}" required="true">
+                                    <p:ajax event="keyup"
+                                            listener="#{preFormCtrl.onNumerEntered(status.index -1)}"></p:ajax>
+                                </p:inputText>
+                            </p:fieldset>
+                        </c:forEach>
+                    </p:panel>
+                </p:panel>
+            </div>
+        </p:panel>
+    </div>
+
+
+    <div class="row">
+        <p:panel styleClass="subjectsGrid opPanel pPanelPreForm" header="Semestrul 2" toggleable="true">
+            <div class="row">
+                <p:outputLabel for="pacheteS2" value="Numar pachete: "/>
+                <p:inputText id="pacheteS2" value="#{preFormCtrl.numberPackagesSem2}" required="true"
+                             onblur="validateNumberInput('an')">
+                    <p:ajax event="keyup" listener="#{preFormCtrl.onKeyUpNumberPSem2()}"
+                            update="eachPackageSem2 OKButton"></p:ajax>
+                </p:inputText>
+            </div>
+
+            <div class="row">
+                <p:panel styleClass="subjectsGrid" id="eachPackageSem2">
+                    <p:panel styleClass="subjectsGrid" rendered="#{preFormCtrl.renderPanelS2()}">
+                        <c:forEach var="item"
+                                   varStatus="status"
+                                   begin="1"
+                                   end="#{preFormCtrl.getNumberPSem2()}">
+                            <p:fieldset styleClass="pachetPanel" legend="#{'Pachet '.concat(item)}">
+                                <p:outputLabel for="#{'s2NumberP'.concat(item)}"
+                                               value="Numar optionale "></p:outputLabel>
+                                <p:inputText id="#{'s2NumberP'.concat(item)}"
+                                             value="#{preFormCtrl.subjectsSem2[status.index - 1]}" required="true">
+                                    <p:ajax event="keyup"
+                                            listener="#{preFormCtrl.onNumberEntered(status.index -1)}"></p:ajax>
+                                </p:inputText>
+                            </p:fieldset>
+                        </c:forEach>
+                    </p:panel>
+                </p:panel>
+            </div>
+        </p:panel>
+    </div>
+
+</ui:composition>

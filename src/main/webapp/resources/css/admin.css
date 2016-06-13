@@ -1,26 +1,146 @@
 .body{
     font-family: Helvetica;
-    background: white;
+    background: #BCBCBC;
     -webkit-font-smoothing: antialiased;
     color: #FFFFFF !important;
 }
 
 .ui-menubar{
-    background: #74C0E0;
+    background: #1C5D99;
     font-family: Helvetica;
     border: 1px solid #7BB2E0;
 }
 
-.ui-menubar .ui-widget-content a,
-.ui-menubar ul .ui-menu-list .ui-menuitem{
-    color: #FFFFFF !important;
+.ui-menubar .ui-menuitem a{
+    color: white !important;
+    margin-top: 25px;
+    font-weight: 500;
 }
 
-.logout{
-    float: right !important;
+.ui-menubar .ui-menuitem:first-child a{
+    margin-top: 0;
+}
+.ui-menubar .ui-menuitem:last-child{
+    float: right;
 }
 
-.ui-menu .ui-menu-parent{
-    /*margin-top: 15px !important;*/
+.ui-panel-content{
+    min-height: 540px;
+}
+
+.ui-dialog{
+    width: 700px !important;
+    height: 600px !important;
+}
+
+.centered {
+    position:relative;
+    height: 100px;
+    margin:0 auto;
+    padding: 15% 0;
+    text-align: center;
+}
+
+.centered td{
+    padding-bottom: 10px;
+}
+
+.centered .ui-button{
+    background: #19954E;
+    color: #FFFFFF;
+    letter-spacing: 1px;
+    font-family: Helvetica;
+    box-shadow: none !important;
+    -moz-box-shadow: none !important;
+    -webkit-box-shadow: none !important;
+    border-radius: 4px;
+    font-weight: 400;
+}
+
+.centered .ui-button:hover{
+    background: #16763b;
+}
+
+.whole-content{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.ui-dialog .ui-dialog-titlebar{
+    background: #19954E;
     color: white;
+    font-weight: 300;
+    letter-spacing: 1px;
+    text-align: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.ui-dialog .ui-dialog-title{
+    float: none;
+}
+
+.drop-down{
+    padding-left: 0px;
+    padding-right: 30px;
+    margin-left: 10px;
+    width: 130px;
+    top: 6px;
+}
+
+.ui-selectonemenu-panel .ui-selectonemenu-list-item,
+.ui-selectonemenu .ui-selectonemenu-label{
+    box-shadow: none;
+    -moz-box-shadow: none;
+    -webkit-box-shadow: none;
+    font-size: 16px;
+    line-height: 1;
+}
+
+.row{
+    padding-top: 10px;
+}
+
+.ui-inputfield{
+    width: 50px;
+    height: 15px;
+}
+
+.centeredText{
+   padding-left: 10px;
+}
+
+.opPanel{
+    min-height: 50px;
+    overflow: auto;
+    border: none;
+}
+.ui-accordion .ui-accordion-header{
+    height: 15px;
+    margin-top: 0;
+    font-family: Helvetica;
+    font-size: 18px;
+}
+
+.subjectsGrid{
+    border: none;
+    min-height: 50px;
+}
+
+.ui-panel .ui-panel-content{
+    min-height: 100px;
+}
+
+.ui-dialog{
+    overflow-y: auto !important;
+}
+
+
+.ui-dialog .ui-resizable-se{
+    background: none;
+    cursor: auto;
+}
+
+.pagePanelContent{
+    min-height: 540px;
 }

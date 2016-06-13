@@ -1,0 +1,51 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+
+    <h:outputStylesheet name="css/preForm.css"/>
+    <h:outputStylesheet name="css/semestru.css"/>
+
+    <div class="row fullWidthInput" >
+        <p:outputLabel for="indicatii" value="Indicatii: "></p:outputLabel>
+        <p:inputTextarea rows="3" cols="60" id="indicatii" value="#{formCtrl.indications}"></p:inputTextarea>
+    </div>
+
+    <div class="row">
+        <p:panel header="Semestrul 1" styleClass="opPanel pPanelPreForm" toggleable="true" id="toUpdate">
+            <c:forEach var="pachet" begin="1" end="#{preFormCtrl.getNumberPSem1()}">
+                <p:fieldset styleClass="pachetPanel fullWidthInput" legend="#{'Pachet '.concat(pachet)}">
+                    <c:forEach var="optional" begin="1" end="#{formCtrl.getSubjectsPerPackageSem1(pachet - 1)}">
+                        <div class="row anContainer">
+                            <h4>#{'Optional '.concat(optional)}</h4>
+                        </div>
+                        <div class="row">
+                            <p:outputLabel for="#{'titlu'.concat(pachet).concat(optional)}"
+                                           value="Titlu: "></p:outputLabel>
+                            <p:inputText id="#{'titlu'.concat(pachet).concat(optional)}"
+                                         value="#{formCtrl.semester1[pachet - 1][optional - 1].title}"></p:inputText>
+                        </div>
+
+                        <div class="row">
+                            <p:outputLabel for="#{'link'.concat(pachet).concat(optional)}"
+                                           value="Link: "></p:outputLabel>
+                            <p:inputText id="#{'link'.concat(pachet).concat(optional)}"
+                                         value="#{formCtrl.semester1[pachet - 1][optional - 1].link}"></p:inputText>
+                        </div>
+
+                        <div class="row">
+                            <p:outputLabel for="#{'descriere'.concat(pachet).concat(optional)}"
+                                           value="Descriere: "></p:outputLabel>
+                            <p:inputTextarea rows="3" cols="60" id="#{'descriere'.concat(pachet).concat(optional)}"
+                                         value="#{formCtrl.semester1[pachet - 1][optional - 1].description}"></p:inputTextarea>
+                        </div>
+                    </c:forEach>
+                </p:fieldset>
+            </c:forEach>
+        </p:panel>
+    </div>
+
+</ui:composition>

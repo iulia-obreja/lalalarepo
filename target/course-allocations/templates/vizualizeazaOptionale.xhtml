@@ -1,0 +1,59 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+
+    <div class="row">
+        <p:panel styleClass="subjectsGrid">
+            #{formCtrl.indications}
+        </p:panel>
+    </div>
+
+    <div class="row">
+        <p:panel header="Semestrul 1" styleClass="opPanel pPanelPreForm">
+            <c:forEach var="pachet" begin="1" end="#{preFormCtrl.getNumberPSem1()}">
+                <p:fieldset styleClass="pachetPanel" legend="#{'Pachet '.concat(pachet)}">
+                    <c:forEach var="optional" begin="1" end="#{formCtrl.getSubjectsPerPackageSem1(pachet - 1)}">
+                        <h4>#{optional}. #{formCtrl.semester1[pachet - 1][optional - 1].title}</h4>
+                        <div class="row">
+                            <h:outputLink value="#{formCtrl.semester1[pachet - 1][optional - 1].link}" target="_blank"
+                                          style="text-decoration:none;color:blue;">
+                                #{formCtrl.getLinkMessage()}
+                            </h:outputLink>
+                        </div>
+                        <div class="row">
+                            <h:outputText
+                                    value="#{formCtrl.semester1[pachet - 1][optional - 1].description}"></h:outputText>
+                        </div>
+                    </c:forEach>
+                </p:fieldset>
+            </c:forEach>
+        </p:panel>
+    </div>
+
+    <div class="row">
+        <p:panel header="Semestrul 2" styleClass="opPanel pPanelPreForm">
+            <c:forEach var="pachet" begin="1" end="#{preFormCtrl.getNumberPSem2()}">
+                <p:fieldset legend="#{'Pachet'.concat(pachet)}" styleClass="pachetPanel">
+                    <c:forEach var="optional" begin="1" end="#{formCtrl.getSubjectsPerPackageSem2(pachet - 1)}">
+                        <h4>#{optional}. #{formCtrl.semester2[pachet - 1][optional - 1].title}</h4>
+                        <div class="row">
+                            <h:outputLink value="#{formCtrl.semester2[pachet - 1][optional - 1].link}" target="_blank"
+                                          style="text-decoration:none;color:blue;">
+                                #{formCtrl.getLinkMessage()}
+                            </h:outputLink>
+                        </div>
+                        <div class="row">
+                            <h:outputText
+                                    value="#{formCtrl.semester2[pachet - 1][optional - 1].description}"></h:outputText>
+                        </div>
+                    </c:forEach>
+                </p:fieldset>
+            </c:forEach>
+        </p:panel>
+    </div>
+
+</ui:composition>
