@@ -57,6 +57,6 @@ public class NavigationController implements Serializable{
     }
 
     public static  String goToStudent(){
-        return getURL("student.xhtml");
+        return getURL("student.xhtml?faces-redirect=true");
     }
 }

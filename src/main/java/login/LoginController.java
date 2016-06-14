@@ -52,10 +52,9 @@ public class LoginController implements Serializable {
         }
     }
 
-    public void logout() {
+    public String logout() {
         loggedIn = false;
-        System.out.println("apel");
-        NavigationController.goToLoginAgain();
+        return NavigationController.goToLoginAgain();
     }
 
     public String getPassword() {
