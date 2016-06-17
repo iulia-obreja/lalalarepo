@@ -1,0 +1,52 @@
+<ui:composition
+        xmlns="http://www.w3.org/1999/xhtml"
+        xmlns:f="http://xmlns.jcp.org/jsf/core"
+        xmlns:h="http://xmlns.jcp.org/jsf/html"
+        xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
+        xmlns:p="http://primefaces.org/ui" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+    <div class="row">
+        <p:panel header="Semestrul 1" styleClass="opPanel pPanelPreForm">
+            <c:forEach var="pachetS13" begin="1" end="#{studentCtrl.numberOfPackagesSem1}">
+                <h4>#{'Pachet '.concat(pachetS13)}</h4>
+                <c:forEach var="optionalS13" begin="1" end="#{studentViewCtrl.getYear3Sem1Size(pachetS13)}">
+                    <div class="row">
+                        <h:outputText for="#{'s13op'.concat(optionalS13).concat(pachetS13)}"
+                                      value="#{'Optiunea '.concat(optionalS13).concat(': ')}"></h:outputText>
+                        <p:selectOneMenu id="#{'s13op'.concat(optionalS13).concat(pachetS13)}"
+                                         value="#{studentCtrl.optionsSem1[pachetS13 - 1][optionalS13 - 1]}">
+                            <f:selectItem itemLabel="Selecteaza Optional" itemValue="" noSelectionOption="true"/>
+                            <f:selectItems
+                                    value="#{studentCtrl.getListOfSubjectTitles(pachetS13, '31')}"/>
+                        </p:selectOneMenu>
+                    </div>
+                </c:forEach>
+            </c:forEach>
+        </p:panel>
+    </div>
+
+
+    <div class="row">
+        <p:panel header="Semestrul 2" styleClass="opPanel pPanelPreForm">
+            <c:forEach var="pachetS23" begin="1" end="#{studentCtrl.numberOfPackagesSem2}">
+                <h4>#{'Pachet '.concat(pachetS23)}</h4>
+                <c:forEach var="optionalS23" begin="1" end="#{studentViewCtrl.getYear3Sem2Size(pachetS23)}">
+                    <div class="row">
+                        <h:outputText for="#{'s23op'.concat(optionalS23).concat(pachetS23)}"
+                                      value="#{'Optiunea '.concat(optionalS23).concat(': ')}"></h:outputText>
+                        <p:selectOneMenu id="#{'s23op'.concat(optionalS23).concat(pachetS23)}"
+                                         value="#{studentCtrl.optionsSem2[pachetS23 - 1][optionalS23 - 1]}">
+                            <f:selectItem itemLabel="Selecteaza Optional" itemValue="" noSelectionOption="true"/>
+                            <f:selectItems
+                                    value="#{studentCtrl.getListOfSubjectTitles(pachetS23, '32')}"/>
+                        </p:selectOneMenu>
+                    </div>
+                </c:forEach>
+            </c:forEach>
+        </p:panel>
+    </div>
+
+    <div class="row30pxTop">
+        <p:commandButton styleClass="okButton trimiteButton" value="Trimite" actionListener="#{studentCtrl.onTrimiteButtonClick()}"/>
+    </div>
+</ui:composition>

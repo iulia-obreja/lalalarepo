@@ -24,7 +24,7 @@
     <!-- Login filter -->
     <filter>
         <filter-name>AuthorizationFilter</filter-name>
-        <filter-class>authorizationFilter.AuthorizationFilter</filter-class>
+        <filter-class>authorizationsFilter.AuthorizationFilter</filter-class>
     </filter>
     <!-- Set the login filter to secure all the pages in the /templates/* path of the application  -->
     <filter-mapping>

@@ -45,11 +45,11 @@
                                  onclick="PF('modal3').show();"/>
                 <p:commandButton id="showButton" value="Adauga optionale" disabled="#{preFormCtrl.buttonDisabled}"
                                  type="button" onclick="PF('modal1').show();"/>
-                <p:commandButton disabled="#{formCtrl.isDisableVeziOptionaleButton()}" value="Vizualizeaza si posteaza optionale"
+                <p:commandButton disabled="#{formCtrl.isDisableVeziOptionaleButton()}" value="Vizualizeaza si salveaza optionale"
                                  type="button" onclick="PF('modal2').show();"/>
             </h:panelGrid>
 
-            <p:dialog header="Formular adaugare optionale" widgetVar="modal1" modal="true" closable="false"
+            <p:dialog  styleClass="modals" header="Formular adaugare optionale" widgetVar="modal1" modal="true" closable="false"
                       maximizable="false" minimizable="false">
 
                 <ui:include src="../templates/semestrul1Form.xhtml"></ui:include>
@@ -63,18 +63,18 @@
                 </div>
             </p:dialog>
 
-            <p:dialog header="Optionalele completate pana acum" widgetVar="modal2" modal="true" maximizable="false"
+            <p:dialog styleClass="modals" header="Optionalele completate pana acum" widgetVar="modal2" modal="true" maximizable="false"
                       minimizable="false">
                 <ui:include src="../templates/vizualizeazaOptionale.xhtml"></ui:include>
 
                 <div class="row okButtonContainer">
-                    <p:commandButton value="Posteaza"
-                                     actionListener="#{formCtrl.onPosteazaButtonClick()}" onclick="modal2.hide()">
+                    <p:commandButton styleClass="okButton" value="Salveaza"
+                                     actionListener="#{formCtrl.onSaveButtonClick()}" onclick="modal2.hide()">
                     </p:commandButton>
                 </div>
             </p:dialog>
 
-            <p:dialog header="Informatii necesare formularului de adaugare optionale" widgetVar="modal3" modal="true"
+            <p:dialog styleClass="modals" header="Informatii necesare formularului de adaugare optionale" widgetVar="modal3" modal="true"
                       maximizable="false" minimizable="false">
                 <ui:include src="../templates/preForm.xhtml"></ui:include>
                 <div class="row okButtonContainer">
@@ -86,7 +86,5 @@
             </p:dialog>
         </p:panel>
     </h:form>
-
-
 </h:body>
 </html>

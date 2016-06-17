@@ -12,6 +12,7 @@ var validateNumberInput = function(elementID){
     var message = value + " este invalid. Introduceti o cifra, dar nu 0.";
 
 
+
     if(!expression.test(value)) {
         PF('growlWV').renderMessage({"summary":"Eroare!",
             "detail": message,

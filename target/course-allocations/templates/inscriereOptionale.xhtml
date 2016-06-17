@@ -1,0 +1,58 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:c="http://java.sun.com/jsp/jstl/core"
+      xmlns:ui="http://java.sun.com/jsf/facelets">
+
+
+<h:head>
+    <title>Students</title>
+    <script name="jquery/jquery.js" library="primefaces" type="text/javascript"></script>
+</h:head>
+
+<h:body class="body">
+
+    <f:facet name="last">
+        <h:outputStylesheet name="css/admin.css"/>
+        <h:outputStylesheet name="css/preForm.css"/>
+    </f:facet>
+
+    <h:form id="parent" styleClass="whole-content">
+        <p:menubar>
+            <p:menuitem><h:graphicImage value="/resources/images/fii-logo.png"/></p:menuitem>
+
+            <p:menuitem value="Optionale anul 2" action="#{navController.goToStudent()}"></p:menuitem>
+
+            <p:menuitem value="Optionale anul 3" action="#{navController.goToStudentAn3()}"></p:menuitem>
+
+            <p:menuitem value="Inscriere optionale" url="#"></p:menuitem>
+
+            <p:menuitem value="Logout" action="#{loginCtrl.logout()}"></p:menuitem>
+        </p:menubar>
+
+        <p:panel styleClass="pagePanelContent">
+            <p:panel styleClass="centeredStudentPage opPanel panelMinHeight50px">
+                <div class="row">
+                    <p:outputLabel for="an" value="An de studiu: "/>
+                <p:selectOneMenu id="an" value="#{studentCtrl.year}">
+                    <p:ajax listener="#{studentCtrl.onYearChanged()}" update="renderedStudentOptions" />
+                    <f:selectItem itemLabel="Selecteaza an" itemValue="" noSelectionOption="true"/>
+                    <f:selectItems value="#{studentCtrl.years}"/>
+                </p:selectOneMenu>
+                </div>
+            </p:panel>
+            <p:panel styleClass="centeredStudentPage opPanel" id="renderedStudentOptions">
+                <p:panel rendered="#{studentCtrl.year2Selected}">
+                    <ui:include src="studentFormAn2.xhtml"></ui:include>
+                </p:panel>
+                <p:panel rendered="#{studentCtrl.year3Selected}">
+                    <ui:include src="studentFormAn3.xhtml"></ui:include>
+                </p:panel>
+            </p:panel>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>

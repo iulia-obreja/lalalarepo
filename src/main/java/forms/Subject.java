@@ -7,7 +7,8 @@ public class Subject {
 
     private String title;
     private String link;
-    private String description;
+    private String prof;
+    private Disciplines favoriteDisciplines = new Disciplines();
 
     public String getTitle() {
         return title;
@@ -17,8 +18,8 @@ public class Subject {
         return link;
     }
 
-    public String getDescription() {
-        return description;
+    public String getProf() {
+        return prof;
     }
 
     public void setTitle(String title) {
@@ -29,7 +30,15 @@ public class Subject {
         this.link = link;
     }
 
-    public void setDescription(String description) {
-        this.description = description;
+    public void setProf(String prof) {
+        this.prof = prof;
+    }
+
+    public Disciplines getFavoriteDisciplines() {
+        return favoriteDisciplines;
+    }
+
+    public void setFavoriteDisciplines(Disciplines favoriteDisciplines) {
+        this.favoriteDisciplines = favoriteDisciplines;
     }
 }

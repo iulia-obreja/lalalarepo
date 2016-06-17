@@ -1,5 +1,7 @@
 package login;
 
+import org.primefaces.context.RequestContext;
+
 import javax.annotation.PostConstruct;
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
@@ -37,11 +39,10 @@ public class LoginController implements Serializable {
         String response = LoginDAO.validate(username, password);
 
         if(response.equals(INVALID)){
-            FacesContext.getCurrentInstance().addMessage(
-                    null,
-                    new FacesMessage(FacesMessage.SEVERITY_WARN,
-                            "Incorrect Username and Passowrd",
-                            "Please enter correct username and Password"));
+
+            FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Logare nereusita", "Username sau parola incorecta");
+
+            RequestContext.getCurrentInstance().showMessageInDialog(message);
             return NavigationController.goToLoginAgain();
         }else{
             loggedIn = true;

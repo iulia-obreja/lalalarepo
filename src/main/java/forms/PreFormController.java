@@ -1,17 +1,15 @@
 package forms;
 
-import forms.CommonDataForm;
-import forms.FormController;
+import commons.CommonDataForm;
 
-import javax.faces.application.FacesMessage;
 import javax.faces.bean.ApplicationScoped;
 import javax.faces.bean.ManagedBean;
-import javax.faces.bean.ViewScoped;
-import javax.faces.context.FacesContext;
 import javax.faces.event.ActionEvent;
 import java.util.ArrayList;
 import java.util.List;
 import java.util.regex.Pattern;
+
+import static commons.Constants.*;
 
 /**
  * Created by Iulia-PC on 6/9/2016.
@@ -23,14 +21,19 @@ public class PreFormController {
 
     private boolean isButtonDisabled;
     private String year;
+    private List<String> years;
     private String numberPackagesSem1;
     private String numberPackagesSem2;
 
     private List<Integer> subjectsSem1;
     private List<Integer> subjectsSem2;
 
+
     public PreFormController(){
         this.isButtonDisabled = true;
+        years = new ArrayList<String>();
+        years.add(AN_2);
+        years.add(AN_3);
     }
 
     public String getYear() {
@@ -67,6 +70,13 @@ public class PreFormController {
         this.isButtonDisabled = buttonDisabled;
     }
 
+    public List<String> getYears() {
+        return years;
+    }
+
+    public void setYears(List<String> years) {
+        this.years = years;
+    }
 
     public int getNumberPSem1() {
         if (!verifyString(numberPackagesSem1)) {
@@ -82,18 +92,6 @@ public class PreFormController {
         }
         CommonDataForm.setSubjectsNumberMappedToPackagesSem1(mapData(subjectsSem1));
         FormController.init();
-    }
-
-    public void onNumerEntered(int index){
-        addMessage("merge " + subjectsSem1.get(index));
-    }
-
-    public void onNumberEntered(int index){
-        addMessage("lala" + subjectsSem2.get(index));
-    }
-    public void addMessage(String summary) {
-        FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, summary, null);
-        FacesContext.getCurrentInstance().addMessage(null, message);
     }
 
     public boolean renderPanelS1() {
@@ -131,11 +129,15 @@ public class PreFormController {
         return listResponse;
     }
 
-
     public void onOkButtonClick(ActionEvent actionEvent){
         setButtonDisabled(false);
         CommonDataForm.setSubjectsNumberMappedToPackagesSem1(mapData(subjectsSem1));
         CommonDataForm.setSubjectsNumberMappedToPackagesSem2(mapData(subjectsSem2));
+        List<List<Integer>> year = new ArrayList<List<Integer>>();
+        year.add(CommonDataForm.getSubjectsNumberMappedToPackagesSem1());
+        year.add(CommonDataForm.getSubjectsNumberMappedToPackagesSem2());
+        CommonDataForm.getYear().put(this.year, year);
+        CommonDataForm.setYearSelected(this.year);
         FormController.init();
     }
 
@@ -155,7 +157,7 @@ public class PreFormController {
     }
 
     public boolean isOkButtonDisabled(){
-        if(verifyString(year) && verifyString(numberPackagesSem1) && verifyString(numberPackagesSem2)){
+        if(verifyString(numberPackagesSem1) && verifyString(numberPackagesSem2)){
             return false;
         }
         return true;

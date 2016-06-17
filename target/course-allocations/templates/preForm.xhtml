@@ -11,10 +11,9 @@
 
     <div class="row anContainer">
         <p:outputLabel for="an" value="An de studiu: "/>
-        <p:inputText id="an" value="#{preFormCtrl.year}" required="true"
-                     onblur="validateNumberInput('an')">
-            <p:ajax event="keyup" update="OKButton"></p:ajax>
-        </p:inputText>
+        <p:selectOneMenu id="an" value="#{preFormCtrl.year}">
+            <f:selectItems value="#{preFormCtrl.years}" />
+        </p:selectOneMenu>
     </div>
 
 
@@ -23,7 +22,7 @@
             <div class="row">
                 <p:outputLabel for="pacheteS1" value="Numar pachete: "/>
                 <p:inputText id="pacheteS1" value="#{preFormCtrl.numberPackagesSem1}" required="true"
-                             onblur="validateNumberInput('an')">
+                             onblur="validateNumberInput('pacheteS1')">
                     <p:ajax event="keyup" listener="#{preFormCtrl.onKeyUpNumberPSem1()}"
                             update="eachPackageSem1 OKButton"></p:ajax>
                 </p:inputText>
@@ -40,8 +39,6 @@
                                 <p:outputLabel for="#{'numberP'.concat(item)}" value="Numar optionale "></p:outputLabel>
                                 <p:inputText id="#{'numberP'.concat(item)}"
                                              value="#{preFormCtrl.subjectsSem1[status.index - 1]}" required="true">
-                                    <p:ajax event="keyup"
-                                            listener="#{preFormCtrl.onNumerEntered(status.index -1)}"></p:ajax>
                                 </p:inputText>
                             </p:fieldset>
                         </c:forEach>
@@ -57,7 +54,7 @@
             <div class="row">
                 <p:outputLabel for="pacheteS2" value="Numar pachete: "/>
                 <p:inputText id="pacheteS2" value="#{preFormCtrl.numberPackagesSem2}" required="true"
-                             onblur="validateNumberInput('an')">
+                             onblur="validateNumberInput('pacheteS2')">
                     <p:ajax event="keyup" listener="#{preFormCtrl.onKeyUpNumberPSem2()}"
                             update="eachPackageSem2 OKButton"></p:ajax>
                 </p:inputText>
@@ -75,8 +72,6 @@
                                                value="Numar optionale "></p:outputLabel>
                                 <p:inputText id="#{'s2NumberP'.concat(item)}"
                                              value="#{preFormCtrl.subjectsSem2[status.index - 1]}" required="true">
-                                    <p:ajax event="keyup"
-                                            listener="#{preFormCtrl.onNumberEntered(status.index -1)}"></p:ajax>
                                 </p:inputText>
                             </p:fieldset>
                         </c:forEach>

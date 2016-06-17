@@ -1,12 +1,12 @@
 package forms;
 
-import forms.CommonDataForm;
-import login.NavigationController;
+import commons.CommonDataForm;
 
 import javax.faces.bean.*;
-import javax.faces.event.ActionEvent;
-import java.util.ArrayList;
-import java.util.List;
+import java.util.*;
+
+import static commons.WriteToFile.*;
+import static commons.Constants.*;
 
 /**
  * Created by Iulia-PC on 6/7/2016.
@@ -22,7 +22,6 @@ public class FormController {
     private boolean disableOkButtonOptionale = true;
     private boolean disablePosteazaButton = true;
     private boolean post = false;
-
 
 
     private static int getSubjectsArraySize(Object item) {
@@ -76,43 +75,50 @@ public class FormController {
         return semester2.get(index).size();
     }
 
-    public void onOkButtonOptionalePressed(){
+    public void onOkButtonOptionalePressed() {
         disableVeziOptionaleButton = false;
     }
 
     public List<List<Subject>> getSemester1() {
         return semester1;
     }
+
     public List<List<Subject>> getSemester2() {
         return semester2;
     }
+
     public String getIndications() {
         return indications;
     }
+
     public void setIndications(String indicatons) {
         this.indications = indicatons;
     }
+
     public boolean isDisableVeziOptionaleButton() {
         return disableVeziOptionaleButton;
     }
+
     public void setDisableVeziOptionaleButton(boolean disableVeziOptionaleButton) {
         this.disableVeziOptionaleButton = disableVeziOptionaleButton;
     }
+
     public boolean isDisableOkButtonOptionale() {
         return disableOkButtonOptionale;
     }
-    public void setDisableOkButtonOptionale(boolean disableOkButtonOptionale) {
-        this.disableOkButtonOptionale = disableOkButtonOptionale;
-    }
+
     public boolean isPost() {
         return post;
     }
+
     public void setPost(boolean post) {
         this.post = post;
     }
+
     public boolean isDisablePosteazaButton() {
         return disablePosteazaButton;
     }
+
     public void setDisablePosteazaButton(boolean disablePosteazaButton) {
         this.disablePosteazaButton = disablePosteazaButton;
     }
@@ -121,8 +127,30 @@ public class FormController {
         return "Link catre pagina materiei";
     }
 
-    public void onPosteazaButtonClick(){
-        post = true;
+    public void onSaveButtonClick() {
+        String yearSelected = CommonDataForm.getYearSelected();
+        int numberOfPackages1 = CommonDataForm.getSubjectsNumberMappedToPackagesSem1().size();
+        int numberOfPackages2 = CommonDataForm.getSubjectsNumberMappedToPackagesSem2().size();
+
+        if (yearSelected.equals(AN_2)) {
+            writeOptionaleToFile(AN_2_FILE,
+                    numberOfPackages1,
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem1(),
+                    semester1,
+                    numberOfPackages2,
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem2(),
+                    semester2,
+                    indications);
+        } else {
+            writeOptionaleToFile(AN_3_FILE,
+                    numberOfPackages1,
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem1(),
+                    semester1,
+                    numberOfPackages2,
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem2(),
+                    semester2,
+                    indications);
+        }
     }
 
 }

@@ -26,7 +26,29 @@
                         </div>
                         <div class="row">
                             <h:outputText
-                                    value="#{formCtrl.semester1[pachet - 1][optional - 1].description}"></h:outputText>
+                                    value="#{formCtrl.semester1[pachet - 1][optional - 1].prof}"></h:outputText>
+                        </div>
+
+                        <div class="row">
+                            <div class="row">
+                                <h:outputText value="Discipline preferate"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline1}"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline2}"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline3}"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline4}"></h:outputText>
+                            </div>
                         </div>
                     </c:forEach>
                 </p:fieldset>
@@ -48,7 +70,29 @@
                         </div>
                         <div class="row">
                             <h:outputText
-                                    value="#{formCtrl.semester2[pachet - 1][optional - 1].description}"></h:outputText>
+                                    value="#{formCtrl.semester2[pachet - 1][optional - 1].prof}"></h:outputText>
+                        </div>
+
+                        <div class="row">
+                            <div class="row">
+                                <h:outputText value="Discipline preferate"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline1}"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline2}"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline3}"></h:outputText>
+                            </div>
+                            <div class="row">
+                                <h:outputText
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline4}"></h:outputText>
+                            </div>
                         </div>
                     </c:forEach>
                 </p:fieldset>

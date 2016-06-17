@@ -1,0 +1,109 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+        "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://java.sun.com/jsf/html"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:p="http://primefaces.org/ui" xmlns:c="http://java.sun.com/jsp/jstl/core">
+
+
+<h:head>
+    <title>Students</title>
+    <script name="jquery/jquery.js" library="primefaces" type="text/javascript"></script>
+</h:head>
+
+<h:body class="body">
+
+    <f:facet name="last">
+        <h:outputStylesheet name="css/admin.css"/>
+        <h:outputStylesheet name="css/preForm.css"/>
+    </f:facet>
+
+    <h:form id="parent" styleClass="whole-content">
+        <p:menubar>
+            <p:menuitem><h:graphicImage value="/resources/images/fii-logo.png"/></p:menuitem>
+
+            <p:menuitem value="Optionale anul 2" action="#{navController.goToStudent()}"></p:menuitem>
+
+            <p:menuitem value="Optionale anul 3" url="#"></p:menuitem>
+
+            <p:menuitem value="Inscriere optionale" action="#{navController.goToInscriereOptionale()}"></p:menuitem>
+
+            <p:menuitem value="Logout" action="#{loginCtrl.logout()}"></p:menuitem>
+        </p:menubar>
+
+        <p:panel styleClass="pagePanelContent">
+            <p:panel styleClass="centeredStudentPage opPanel">
+                <div class="row">
+                    <h:outputText value="#{studentViewCtrl.indicationsYear3}"></h:outputText>
+                </div>
+
+                <div class="row">
+                    <p:panel header="Semestrul 1" styleClass="opPanel pPanelPreForm">
+                        <c:forEach var="pachet" begin="1" end="#{studentViewCtrl.getPackagesSem1Year3()}">
+                            <p:fieldset legend="#{'Pachet '.concat(pachet)}" styleClass="pachetPanel">
+                                <c:forEach var="optional" begin="1" end="#{studentViewCtrl.getYear3Sem1Size(pachet)}">
+                                    <div class="row">
+                                        <h4>#{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].title}</h4>
+                                    </div>
+                                    <div class="row">
+                                        <h:outputLink
+                                                value="#{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].link}"
+                                                target="_blank" style="text-decoration:none;color:blue;">
+                                            #{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].link}
+                                        </h:outputLink>
+                                    </div>
+                                    <div class="row">
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].prof}
+                                    </div>
+                                    <div class="row">
+                                        <h:outputText value="Discipline preferate: "></h:outputText>
+                                    </div>
+                                    <div class="row">
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].favoriteDisciplines.discipline1}
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].favoriteDisciplines.discipline2}
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].favoriteDisciplines.discipline3}
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem1(pachet)[optional - 1].favoriteDisciplines.discipline4}
+                                    </div>
+                                </c:forEach>
+                            </p:fieldset>
+                        </c:forEach>
+                    </p:panel>
+                </div>
+
+                <div class="row">
+                    <p:panel header="Semestrul 2" styleClass="opPanel pPanelPreForm">
+                        <c:forEach var="pachet" begin="1" end="#{studentViewCtrl.getPackagesSem2Year3()}">
+                            <p:fieldset legend="#{'Pachet '.concat(pachet)}" styleClass="pachetPanel">
+                                <c:forEach var="optional" begin="1" end="#{studentViewCtrl.getYear3Sem2Size(pachet)}">
+                                    <div class="row">
+                                        <h4>#{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].title}</h4>
+                                    </div>
+                                    <div class="row">
+                                        <h:outputLink
+                                                value="#{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].link}"
+                                                target="_blank" style="text-decoration:none;color:blue;">
+                                            #{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].link}
+                                        </h:outputLink>
+                                    </div>
+                                    <div class="row">
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].prof}
+                                    </div>
+                                    <div class="row">
+                                        <h:outputText value="Discipline preferate: "></h:outputText>
+                                    </div>
+                                    <div class="row">
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].favoriteDisciplines.discipline1}
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].favoriteDisciplines.discipline2}
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].favoriteDisciplines.discipline3}
+                                        #{studentViewCtrl.getListOfSubjectsYear3Sem2(pachet)[optional - 1].favoriteDisciplines.discipline4}
+                                    </div>
+                                </c:forEach>
+                            </p:fieldset>
+                        </c:forEach>
+                    </p:panel>
+                </div>
+            </p:panel>
+        </p:panel>
+    </h:form>
+</h:body>
+</html>

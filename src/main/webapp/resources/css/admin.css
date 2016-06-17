@@ -28,7 +28,7 @@
     min-height: 540px;
 }
 
-.ui-dialog{
+.modals{
     width: 700px !important;
     height: 600px !important;
 }
@@ -143,4 +143,13 @@
 
 .pagePanelContent{
     min-height: 540px;
+}
+
+.ui-selectonemenu{
+    top: 5px;
+    width: 100px;
+}
+
+.panelMinHeight50px .ui-panel-content{
+    min-height: 50px !important;
 }

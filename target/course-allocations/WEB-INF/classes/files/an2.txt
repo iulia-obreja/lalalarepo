@@ -1,0 +1,47 @@
+
+1
+3
+CDC
+http://profs.info.uaic.ro/~fltiplea/
+Ferucio Laurentiu Tiplea
+SD
+LOGICA
+PS
+
+PLP
+http://profs.info.uaic.ro/~arusoaie.andrei/lectures/PLP/plp.html
+Andrei Arusoaie
+POO
+SD
+LOGICA
+
+AG
+https://drive.google.com/drive/folders/0B-wLi0f-62T2T2doT19lekRJVWs
+Henri Luchian
+PALG
+PS
+POO
+
+1
+3
+PF
+http://profs.info.uaic.ro/~stefan.ciobaca/pf/ 
+Gheorghe Grigoras, Stefan Ciobaca
+POO
+PALG
+LOGICA
+
+MATLAB
+http://profs.info.uaic.ro/~fliacob/An2/2015-2016/Resurse%20MCM_2016/
+Florin Iacob
+MATE
+POO
+
+
+IC
+http://profs.info.uaic.ro/~fltiplea/
+Ferucio Laurentiu Tiplea
+FAI
+PS
+
+

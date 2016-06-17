@@ -31,10 +31,18 @@
                         </div>
 
                         <div class="row">
-                            <p:outputLabel for="#{'descriere2'.concat(pachet).concat(optional)}"
-                                           value="Descriere: "></p:outputLabel>
-                            <p:inputTextarea styleClass="fullWidthInput" rows="3" cols="60" id="#{'descriere2'.concat(pachet).concat(optional)}"
-                                             value="#{formCtrl.semester2[pachet - 1][optional - 1].description}"></p:inputTextarea>
+                            <p:outputLabel for="#{'prof2'.concat(pachet).concat(optional)}"
+                                           value="Profesor/Profesori: "></p:outputLabel>
+                            <p:inputText styleClass="fullWidthInput" id="#{'prof2'.concat(pachet).concat(optional)}"
+                                             value="#{formCtrl.semester2[pachet - 1][optional - 1].prof}"></p:inputText>
+                        </div>
+
+                        <div class="row">
+                            <h:outputText value="Discipline preferate"></h:outputText>
+                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline1}"></p:inputText>
+                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline2}"></p:inputText>
+                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline3}"></p:inputText>
+                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline4}"></p:inputText>
                         </div>
                     </c:forEach>
                 </p:fieldset>
