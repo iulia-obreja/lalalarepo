@@ -1,9 +1,9 @@
 <ui:composition
         xmlns="http://www.w3.org/1999/xhtml"
-        xmlns:f="http://xmlns.jcp.org/jsf/core"
         xmlns:h="http://xmlns.jcp.org/jsf/html"
         xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
-        xmlns:p="http://primefaces.org/ui" xmlns:c="http://java.sun.com/jsp/jstl/core">
+        xmlns:p="http://primefaces.org/ui"
+        xmlns:c="http://java.sun.com/jsp/jstl/core">
 
 
     <div class="row">
@@ -13,7 +13,7 @@
     </div>
 
     <div class="row">
-        <p:panel header="Semestrul 1" styleClass="opPanel pPanelPreForm">
+        <p:panel header="Semestrul 1" styleClass="opPanel pPanelPreForm centeredPanelView">
             <c:forEach var="pachet" begin="1" end="#{preFormCtrl.getNumberPSem1()}">
                 <p:fieldset styleClass="pachetPanel" legend="#{'Pachet '.concat(pachet)}">
                     <c:forEach var="optional" begin="1" end="#{formCtrl.getSubjectsPerPackageSem1(pachet - 1)}">
@@ -21,7 +21,7 @@
                         <div class="row">
                             <h:outputLink value="#{formCtrl.semester1[pachet - 1][optional - 1].link}" target="_blank"
                                           style="text-decoration:none;color:blue;">
-                                #{formCtrl.getLinkMessage()}
+                                #{formCtrl.semester1[pachet - 1][optional - 1].link}
                             </h:outputLink>
                         </div>
                         <div class="row">
@@ -35,19 +35,19 @@
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline1}"></h:outputText>
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].d1.cod}"></h:outputText>
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline2}"></h:outputText>
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].d2.cod}"></h:outputText>
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline3}"></h:outputText>
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].d3.cod}"></h:outputText>
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].favoriteDisciplines.discipline4}"></h:outputText>
+                                        value="#{formCtrl.semester1[pachet - 1][optional - 1].d4.cod}"></h:outputText>
                             </div>
                         </div>
                     </c:forEach>
@@ -57,7 +57,7 @@
     </div>
 
     <div class="row">
-        <p:panel header="Semestrul 2" styleClass="opPanel pPanelPreForm">
+        <p:panel header="Semestrul 2" styleClass="opPanel pPanelPreForm centeredPanelView">
             <c:forEach var="pachet" begin="1" end="#{preFormCtrl.getNumberPSem2()}">
                 <p:fieldset legend="#{'Pachet'.concat(pachet)}" styleClass="pachetPanel">
                     <c:forEach var="optional" begin="1" end="#{formCtrl.getSubjectsPerPackageSem2(pachet - 1)}">
@@ -65,7 +65,7 @@
                         <div class="row">
                             <h:outputLink value="#{formCtrl.semester2[pachet - 1][optional - 1].link}" target="_blank"
                                           style="text-decoration:none;color:blue;">
-                                #{formCtrl.getLinkMessage()}
+                                #{formCtrl.semester2[pachet - 1][optional - 1].link}
                             </h:outputLink>
                         </div>
                         <div class="row">
@@ -79,19 +79,19 @@
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline1}"></h:outputText>
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].d1.cod}"></h:outputText>
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline2}"></h:outputText>
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].d2.cod}"></h:outputText>
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline3}"></h:outputText>
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].d3.cod}"></h:outputText>
                             </div>
                             <div class="row">
                                 <h:outputText
-                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline4}"></h:outputText>
+                                        value="#{formCtrl.semester2[pachet - 1][optional - 1].d4.cod}"></h:outputText>
                             </div>
                         </div>
                     </c:forEach>

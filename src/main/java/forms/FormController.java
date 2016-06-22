@@ -1,8 +1,12 @@
 package forms;
 
 import commons.CommonDataForm;
+import login.LoginController;
 
 import javax.faces.bean.*;
+import javax.servlet.http.HttpServletRequest;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import static commons.WriteToFile.*;
@@ -21,7 +25,6 @@ public class FormController {
     private boolean disableVeziOptionaleButton = true;
     private boolean disableOkButtonOptionale = true;
     private boolean disablePosteazaButton = true;
-    private boolean post = false;
 
 
     private static int getSubjectsArraySize(Object item) {
@@ -107,14 +110,6 @@ public class FormController {
         return disableOkButtonOptionale;
     }
 
-    public boolean isPost() {
-        return post;
-    }
-
-    public void setPost(boolean post) {
-        this.post = post;
-    }
-
     public boolean isDisablePosteazaButton() {
         return disablePosteazaButton;
     }
@@ -141,6 +136,12 @@ public class FormController {
                     CommonDataForm.getSubjectsNumberMappedToPackagesSem2(),
                     semester2,
                     indications);
+
+            writePacheteToCsv(PACHETE,
+                    AN_2,
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem1(),
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem2());
+            writePrefDisciplineToCsv(AN_2, semester1, semester2);
         } else {
             writeOptionaleToFile(AN_3_FILE,
                     numberOfPackages1,
@@ -150,7 +151,11 @@ public class FormController {
                     CommonDataForm.getSubjectsNumberMappedToPackagesSem2(),
                     semester2,
                     indications);
+            writePacheteToCsv(PACHETE,
+                    AN_3,
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem1(),
+                    CommonDataForm.getSubjectsNumberMappedToPackagesSem2());
+            writePrefDisciplineToCsv(AN_3, semester1, semester2);
         }
     }
-
 }

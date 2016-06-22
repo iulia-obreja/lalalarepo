@@ -20,7 +20,9 @@ public class NavigationController implements Serializable{
 
         FacesContext ctx = FacesContext.getCurrentInstance();
         if(ctx == null){
-            return "/home/home.xhtml";
+            if (newPage.equals("studentLogin.xhtml") || newPage.equals("adminLogin.xhtml")){
+                return "/home/" + newPage;
+            }
         }
 
         HttpServletRequest servletRequest = (HttpServletRequest) ctx.getExternalContext().getRequest();
@@ -28,9 +30,9 @@ public class NavigationController implements Serializable{
 
         String splitter[] = fullURI.split("/");
 
-        if(newPage.equals("home.xhtml")){
+        if(newPage.equals("studentLogin.xhtml") || newPage.equals("adminLogin.xhtml")){
             if(splitter[1].equals("home")){
-                return "/home.xhtml";
+                return "/" + newPage;
             }
         }
 
@@ -40,20 +42,16 @@ public class NavigationController implements Serializable{
         return "templates/" + newPage;
     }
 
-    public static String goToProcesare(){
-        return getURL("procesare.xhtml?faces-redirect=true");
+    public static String goToRepartizare(){
+        return getURL("repartizare.xhtml?faces-redirect=true");
     }
 
     public static String goToAdmin(){
         return getURL("admin.xhtml?faces-redirect=true");
     }
 
-    public String goToAlgoritm(){
-        return getURL("algoritm.xhtml?faces-redirect=true");
-    }
-
     public static String goToLoginAgain(){
-        return getURL("home.xhtml");
+        return getURL("studentLogin.xhtml");
     }
 
     public static String goToStudent(){
@@ -66,5 +64,9 @@ public class NavigationController implements Serializable{
 
     public static String goToInscriereOptionale(){
         return getURL("inscriereOptionale.xhtml?faces-redirect=true");
+    }
+
+    public static String goToAdminLogin(){
+        return getURL("adminLogin.xhtml");
     }
 }

@@ -1,6 +1,6 @@
 package commons;
 
-import forms.Disciplines;
+import forms.FavDiscipline;
 import forms.Subject;
 
 import java.io.BufferedReader;
@@ -20,8 +20,10 @@ public class ReadFromFile {
     private static Map<Integer, List<Subject>> sem1;
     private static Map<Integer, List<Subject>> sem2;
 
-    private static Disciplines makeDisciplines(String d1, String d2, String d3, String d4){
+    private static String[] makeDisciplines(String d1, String d2, String d3, String d4){
+        String[] response = new String[4];
         String dd1, dd2, dd3;
+
         if(!d1.equals("")){
             if(d2.equals("") && d3.equals("") && d4.equals("")){
                 dd1 = d1;
@@ -52,13 +54,20 @@ public class ReadFromFile {
             dd3 = d3;
         }
 
-        return new Disciplines(dd1, dd2, dd3, d4);
+        response[0] = dd1;
+        response[1] = dd2;
+        response[2] = dd3;
+        response[3] = d4;
+
+        return response;
     }
 
     private static Map<Integer, List<Subject>> addSubjectsToSemester(BufferedReader br, List<Integer> numberOfSubjects) {
         Map<Integer, List<Subject>> resp = new HashMap<Integer, List<Subject>>();
         List<Subject> subjects;
         Subject subject;
+        FavDiscipline discipline;
+        String[] disciplines;
 
         try {
             for (int i = 0; i < numberOfSubjects.size(); i++) {
@@ -72,11 +81,28 @@ public class ReadFromFile {
                     String d3 = br.readLine();
                     String d4 = br.readLine();
 
+                    disciplines = makeDisciplines(d1, d2, d3, d4);
+
                     subject = new Subject();
                     subject.setTitle(titlu);
                     subject.setLink(link);
                     subject.setProf(prof);
-                    subject.setFavoriteDisciplines(makeDisciplines(d1, d2, d3, d4));
+
+                    discipline = new FavDiscipline();
+                    discipline.setCod(disciplines[0]);
+                    subject.setD1(discipline);
+
+                    discipline = new FavDiscipline();
+                    discipline.setCod(disciplines[1]);
+                    subject.setD2(discipline);
+
+                    discipline = new FavDiscipline();
+                    discipline.setCod(disciplines[2]);
+                    subject.setD3(discipline);
+
+                    discipline = new FavDiscipline();
+                    discipline.setCod(disciplines[3]);
+                    subject.setD4(discipline);
                     subjects.add(subject);
                 }
                 resp.put(i + 1, subjects);

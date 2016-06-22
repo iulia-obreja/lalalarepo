@@ -1,10 +1,13 @@
 package forms;
 
+import login.LoginController;
 import org.primefaces.context.RequestContext;
 
 import javax.faces.application.FacesMessage;
 import javax.faces.bean.ManagedBean;
 import javax.faces.bean.SessionScoped;
+import java.text.DateFormat;
+import java.text.SimpleDateFormat;
 import java.util.*;
 
 import static commons.Constants.*;
@@ -247,12 +250,29 @@ public class StudentFormController {
             FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_WARN, "Eroare", "Trebuie completate toate optiunile, fara duplicate.");
             RequestContext.getCurrentInstance().showMessageInDialog(message);
         }else{
-            if(year.equals(AN_2)){
-               // writePreferinteStudentiToCsv(PREFERINTE_AN2);
+            java.util.Date now = new java.util.Date();
+            DateFormat df = new SimpleDateFormat("dd/MM/yyyy HH:mm");
+            String timestamp = df.format(now);
 
+            if(year.equals(AN_2)){
+                 writePreferinteStudentiToCsv(PREFERINTE_AN2,
+                         timestamp,
+                         LoginController.getUserData().get(2),
+                         LoginController.getUserData().get(1),
+                         optionsSem1,
+                         optionsSem2);
+                FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Succes", "Preferintele au fost trimise cu succes.");
+                RequestContext.getCurrentInstance().showMessageInDialog(message);
             }
             if(year.equals(AN_3)){
-              // writePreferinteStudentiToCsv(PREFERINTE_AN3);
+                writePreferinteStudentiToCsv(PREFERINTE_AN3,
+                        timestamp,
+                        LoginController.getUserData().get(2),
+                        LoginController.getUserData().get(1),
+                        optionsSem1,
+                        optionsSem2);
+                FacesMessage message = new FacesMessage(FacesMessage.SEVERITY_INFO, "Succes", "Preferintele au fost trimise cu succes.");
+                RequestContext.getCurrentInstance().showMessageInDialog(message);
             }
         }
     }

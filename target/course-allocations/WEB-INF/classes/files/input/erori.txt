@@ -1,0 +1,81 @@
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/14/2016 15:20:07,"3109104SL151018","Arhip E Andrei-Emanoil","AG","PLP","CDC","IC","PF","MCM"
+	Eroare: Student inexistent: 3109104SL151018 -- Arhip E Andrei-Emanoil
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/16/2016 0:16:33,31090104,"Arvinte D.B. Rares","CDC","AG","PLP","IC","MCM","PF"
+	Eroare: Student inexistent: 31090104 -- Arvinte D.B. Rares
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/22/2016 14:09:19,"310901049L151059","C","AG","PLP","CDC","PF","IC","MCM"
+	Eroare: Student inexistent: 310901049L151059 -- C
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/22/2016 18:15:35,"310901049L151059","CARAIMAN C. STEFAN","AG","PLP","CDC","IC","PF","MCM"
+	Eroare: Student inexistent: 310901049L151059 -- CARAIMAN C. STEFAN
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/23/2016 14:13:58,"310901043L151064","Cazamir P. Delia-Iuliana","CDC","AG","PLP","IC","PF","MCM"
+	Eroare: Student inexistent: 310901043L151064 -- Cazamir P. Delia-Iuliana
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/14/2016 18:47:54,"3109014SL151069","Cebere E. Octavian","AG","AG","PLP","IC","IC","IC"
+	Eroare: Student inexistent: 3109014SL151069 -- Cebere E. Octavian
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/24/2016 18:19:48,"31090104SL15095","Condurache C.I. Vasile Vlad","PLP","AG","CDC","MCM","IC","PF"
+	Eroare: Student inexistent: 31090104SL15095 -- Condurache C.I. Vasile Vlad
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/22/2016 10:29:42,"31090104S2151120","DĂNILĂ G. MARIUS-CRISTIAN","AG","CDC","PLP","IC","PF","MCM"
+	Eroare: Student fuzzy: 31090104S2151120, DĂNILĂ G. MARIUS-CRISTIAN --> 31090104SL140127, DĂNILĂ P.E. ALEXANDRU
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/20/2016 15:50:17,31090104,"Gherca R. Razvan-Andrei","PLP","AG","CDC","IC","MCM","PF"
+	Eroare: Student inexistent: 31090104 -- Gherca R. Razvan-Andrei
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/19/2016 16:32:29,"310901049L151207","I.","CDC","AG","PLP","MCM","IC","PF"
+	Eroare: Student inexistent: 310901049L151207 -- I.
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/20/2016 22:29:25,"310901049L151097","Ioan","PLP","AG","CDC","PF","MCM","IC"
+	Eroare: Student inexistent: 310901049L151097 -- Ioan
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/11/2016 23:29:25,"3109010492152005","M","AG","CDC","PLP","PF","IC","MCM"
+	Eroare: Student inexistent: 3109010492152005 -- M
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/22/2016 17:44:36,"3109010492151268","M.I","AG","CDC","PLP","IC","PF","MCM"
+	Eroare: Student inexistent: 3109010492151268 -- M.I
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/20/2016 18:39:43,"310901104SL15/235","Mitan A Theodor-Alexandru","PLP","CDC","AG","MCM","PF","IC"
+	Eroare: Student inexistent: 310901104SL15/235 -- Mitan A Theodor-Alexandru
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/22/2016 11:58:19,"31090104SL15246","Negrus C. Bogdan-Andrei","PLP","CDC","AG","MCM","IC","PF"
+	Eroare: Student inexistent: 31090104SL15246 -- Negrus C. Bogdan-Andrei
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/23/2016 0:08:28,"3109010491151278","Popa DS Petrut Andrei","AG","PLP","CDC","PF","MCM","IC"
+	Eroare: Student fuzzy: 3109010491151278, Popa DS Petrut Andrei --> 31090104SL140311, POPA C.C. EDUARD
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/22/2016 20:37:26,"3109010492151281","Popa R.P. Ileana","AG","CDC","PLP","IC","PF","MCM"
+	Eroare: Student fuzzy: 3109010492151281, Popa R.P. Ileana --> 31090104SL080318, POPA  O.  ANDREI-SILVIU
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti1.csv
+	Linie: 5/18/2016 17:51:08,"310901043L151318","Simionescu M. Darius-Constantin","PLP","AG","CDC","PF","IC","MCM"
+	Eroare: Student fuzzy: 310901043L151318, Simionescu M. Darius-Constantin --> 31090104SL140350, SIMIONESEI V. LOREDANA-MARINELA
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/19/2016 13:16:18,"31090104SL120013","Anusca A. Andrei ????????","TPPA","DSFUM","I.NET","CSSO","A3D","RN","LPP","PDJ","ARMS","PBR","PCPDIT","RPA","ACTN","CC","PMSOF","SMCA","TSP.N"
+	Eroare: Student inexistent: 31090104SL120013 -- Anusca A. Andrei ????????
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/11/2016 19:14:31,"3109014SL100113","Cozminiuc M. Catalin","DSFUM","TPPA","I.NET","A3D","RN","LPP","CSSO","PCPDIT","ARMS","PDJ","PBR","RPA","CC","ACTN","PMSOF","SMCA","TSP.N"
+	Eroare: Student inexistent: 3109014SL100113 -- Cozminiuc M. Catalin
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/19/2016 21:43:25,"31090104SL0172","Ghiuzan G. Denis","I.NET","TPPA","DSFUM","RN","A3D","LPP","CSSO","PDJ","ARMS","PBR","PCPDIT","ACTN","CC","RPA","TSP.N","SMCA","PMSOF"
+	Eroare: Student inexistent: 31090104SL0172 -- Ghiuzan G. Denis
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/17/2016 13:27:58,"31090704SL140217","Ivanuta I Andreea-Simona","TPPA","I.NET","DSFUM","A3D","CSSO","RN","LPP","PDJ","PCPDIT","ARMS","PBR","RPA","ACTN","CC","PMSOF","SMCA","TSP.N"
+	Eroare: Student inexistent: 31090704SL140217 -- Ivanuta I Andreea-Simona
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/12/2016 16:45:45,499343,"Lebada C Ciprian","I.NET","TPPA","DSFUM","A3D","CSSO","LPP","RN","PDJ","PCPDIT","PBR","ARMS","RPA","CC","ACTN","SMCA","TSP.N","PMSOF"
+	Eroare: Student inexistent: 499343 -- Lebada C Ciprian
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/12/2016 0:00:42,97103,"Popa A Lucian","DSFUM","TPPA","I.NET","RN","CSSO","LPP","A3D","PBR","PDJ","PCPDIT","ARMS","RPA","ACTN","CC","PMSOF","TSP.N","SMCA"
+	Eroare: Student inexistent: 97103 -- Popa A Lucian
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/12/2016 10:42:43,"31090104SL14031","Prisacaru N. Elena-Catalina","I.NET","TPPA","DSFUM","CSSO","RN","LPP","A3D","PCPDIT","ARMS","PBR","PDJ","CC","ACTN","RPA","PMSOF","TSP.N","SMCA"
+	Eroare: Student inexistent: 31090104SL14031 -- Prisacaru N. Elena-Catalina
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/18/2016 20:44:12,"3109104SL140333","Rosu C. Oana-Maria","I.NET","TPPA","DSFUM","RN","A3D","CSSO","LPP","ARMS","PDJ","PCPDIT","PBR","CC","ACTN","RPA","TSP.N","SMCA","PMSOF"
+	Eroare: Student inexistent: 3109104SL140333 -- Rosu C. Oana-Maria
+E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input\pref_studenti2.csv
+	Linie: 5/23/2016 10:21:39,19000712076446,"Sparhat P Cosmin Mihai","I.NET","DSFUM","TPPA","A3D","LPP","CSSO","RN","ARMS","ARMS","ARMS","ARMS","RPA","CC","ACTN","PMSOF","PMSOF","PMSOF"
+	Eroare: Student inexistent: 19000712076446 -- Sparhat P Cosmin Mihai

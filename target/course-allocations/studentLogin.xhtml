@@ -7,18 +7,32 @@
 <h:head>
     <title>Sign in</title>
     <script name="jquery/jquery.js" library="primefaces" type="text/javascript"></script>
+
 </h:head>
 
 <h:body class="body">
-    <h:outputStylesheet name="css/home.css"  />
+    <h:outputStylesheet name="css/home.css"/>
     <div id="login-form-container">
         <h:form class="test-panel">
             <p:panel id="login">
                 <h:panelGrid class="panel-grid">
-                    <p:inputText value="#{loginCtrl.username}" placeholder="Name"/>
-                    <p:password value="#{loginCtrl.password}" placeholder="Password"/>
-                    <p:commandButton value="Sign in" action="#{loginCtrl.verifyUser()}"/>
+                    <h:outputText style="font-size: 14px;padding-bottom: 10px;"
+                                  value="Foloseste contul de la facultate (ex: ion.popescu). Pe aceasta adresa de e-mail vrei primi un cod cu care te vei putea mai apoi autentifica."></h:outputText>
+                    <p:inputText value="#{loginCtrl.username}" placeholder="Email"/>
+                    <p:commandButton value="Trimite cod" action="#{loginCtrl.checkUser()}"
+                                     update="codContainer"></p:commandButton>
+                    <p:panel styleClass="panelWithoutBorders" id="codContainer">
+                        <p:panel styleClass="panelWithoutBorders" rendered="#{loginCtrl.validUser}">
+                            <p:password value="#{loginCtrl.authCodeFromUser}" placeholder="Cod"/>
+                            <p:commandButton value="Sign in" action="#{loginCtrl.loginAsStudent()}"/>
+                        </p:panel>
+                    </p:panel>
                 </h:panelGrid>
+                <div class="row" style="text-align: center" >
+                    <h:commandLink immediate="true" action="#{navController.goToAdminLogin()}" >
+                        <h:outputText value="Login ca admin"></h:outputText>
+                    </h:commandLink>
+                </div>
             </p:panel>
         </h:form>
     </div>

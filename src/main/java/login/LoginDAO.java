@@ -1,6 +1,9 @@
 package login;
 
 import java.sql.*;
+import java.util.ArrayList;
+import java.util.List;
+
 import static commons.Constants.*;
 
 /**
@@ -58,5 +61,30 @@ public class LoginDAO {
         } finally {
         }
         return con;
+    }
+
+    public static List<String> checkForUserInDB(String user){
+        String email = user + "@info.uaic.ro";
+        List<String> response = new ArrayList<>();
+        ResultSet rs = null;
+        PreparedStatement pst = null;
+        Connection con = getConnection();
+        String stm = "Select * from studenti where email='" + email + "'";
+        try {
+            pst = con.prepareStatement(stm);
+            pst.execute();
+            rs = pst.getResultSet();
+
+            while (rs.next()) {
+                response.add(rs.getString(1));
+                response.add(rs.getString(2));
+                response.add(rs.getString(3));
+                response.add(rs.getString(4));
+            }
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+
+        return response;
     }
 }

@@ -3,7 +3,8 @@
         xmlns:ui="http://xmlns.jcp.org/jsf/facelets"
         xmlns:h="http://xmlns.jcp.org/jsf/html"
         xmlns:p="http://primefaces.org/ui"
-        xmlns:c="http://java.sun.com/jsp/jstl/core">
+        xmlns:c="http://java.sun.com/jsp/jstl/core"
+        xmlns:f="http://xmlns.jcp.org/jsf/core">
 
     <h:outputStylesheet name="css/preForm.css"/>
     <h:outputStylesheet name="css/semestru.css"/>
@@ -32,18 +33,64 @@
 
                         <div class="row">
                             <p:outputLabel for="#{'prof2'.concat(pachet).concat(optional)}"
-                                           value="Profesor/Profesori: "></p:outputLabel>
+                                           value="Profesor: "></p:outputLabel>
                             <p:inputText styleClass="fullWidthInput" id="#{'prof2'.concat(pachet).concat(optional)}"
                                              value="#{formCtrl.semester2[pachet - 1][optional - 1].prof}"></p:inputText>
                         </div>
+                        <p:panelGrid styleClass="favDisciplinesTable">
+                            <f:facet name="header">
+                                <p:row>
+                                    <p:column styleClass="favDisciplinesTableHeader" colspan="2">Discipline preferate pentru acest obiect</p:column>
+                                </p:row>
+                            </f:facet>
 
-                        <div class="row">
-                            <h:outputText value="Discipline preferate"></h:outputText>
-                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline1}"></p:inputText>
-                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline2}"></p:inputText>
-                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline3}"></p:inputText>
-                            <p:inputText value="#{formCtrl.semester2[pachet - 1][optional - 1].favoriteDisciplines.discipline4}"></p:inputText>
-                        </div>
+                            <p:row>
+                                <p:column>Nume</p:column>
+                                <p:column>Pondere</p:column>
+                            </p:row>
+
+                            <p:row>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d1.cod}"></h:inputText>
+                                </p:column>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d1.pondere}"></h:inputText>
+                                </p:column>
+                            </p:row>
+                            <p:row>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d2.cod}"></h:inputText>
+                                </p:column>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d2.pondere}"></h:inputText>
+                                </p:column>
+                            </p:row>
+                            <p:row>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d3.cod}"></h:inputText>
+                                </p:column>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d3.pondere}"></h:inputText>
+                                </p:column>
+                            </p:row>
+                            <p:row>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d4.cod}"></h:inputText>
+                                </p:column>
+                                <p:column>
+                                    <h:inputText
+                                                 value="#{formCtrl.semester2[pachet - 1][optional - 1].d4.pondere}"></h:inputText>
+                                </p:column>
+                            </p:row>
+
+                        </p:panelGrid>
                     </c:forEach>
                 </p:fieldset>
             </c:forEach>

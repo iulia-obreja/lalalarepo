@@ -2,60 +2,272 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="dfcc7856-5975-4399-9f1a-3193a6782f4c" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/templates/studentAn2View.xhtml" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/.idea/libraries/Maven__javax_validation_validation_api_1_0_0_GA.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/templates/student.xhtml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/authorizationFilter/AuthorizationFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/forms/CommonDataForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/authorizationFilter/AuthorizationFilter.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/CommonDataForm.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/validation-api-1.0.0.GA.jar" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/templates/student.xhtml" afterPath="" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/lib/StableMatching.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/forms/FavDiscipline.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/login/SendEmailService$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/login/SendEmailService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/repartizare/RepartitionController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/Application.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/RepartizareProblem.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ImportDiscipline.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ImportFile.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ImportNote.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ImportPachete.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ImportPrefDiscipline.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ImportPrefStudenti.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ImportStudenti.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/InvalidLineException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/input/ProcesareNote.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/model/Disciplina.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/model/Optional.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/model/Pachet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/model/Repartizare.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/model/Student.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/report/IndexOptionaleReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/report/IndexReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/report/OptionalReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/report/RepartizareCSV.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/report/Report.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/report/ReportManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/ro/info/uaic/opt/report/StudentiReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/FavDiscipline.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/SendEmailService$1.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/SendEmailService.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/repartizare/RepartitionController.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/Application.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/RepartizareProblem.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ImportDiscipline.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ImportFile.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ImportNote.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ImportPachete.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ImportPrefDiscipline.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ImportPrefStudenti.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ImportStudenti.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/InvalidLineException.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/input/ProcesareNote.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/model/Disciplina.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/model/Optional.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/model/Pachet.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/model/Repartizare.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/model/Student.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/report/IndexOptionaleReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/report/IndexReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/report/OptionalReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/report/RepartizareCSV.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/report/Report.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/report/ReportManager.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/ro/info/uaic/opt/report/StudentiReport.class" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/StableMatching-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/activation-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/commons-lang3-3.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/freemarker-2.3.23.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/javaee-api-7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/javax.mail-1.5.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/mail-1.4.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/StableMatching-1.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/activation-1.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/commons-lang3-3.4.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/freemarker-2.3.23.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/javaee-api-7.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/javax.mail-1.5.0.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/javax.servlet-api-3.0.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/jsf-api-2.2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/jsf-impl-2.2.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/jstl-1.2.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/junit-3.8.1.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/mail-1.4.7.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/postgresql-9.4.1208.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/dependency/primefaces-5.3.jar" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__StableMatching_StableMatching_1_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__com_sun_mail_javax_mail_1_5_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_activation_activation_1_1.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_javaee_api_7_0.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__javax_mail_mail_1_4_7.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_apache_commons_commons_lang3_3_4.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/libraries/Maven__org_freemarker_freemarker_2_3_23.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/forms/FavDiscipline.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/login/SendEmailService.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/repartizare/RepartitionController.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/Application.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/RepartizareProblem.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportDiscipline.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportFile.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportNote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportPachete.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportPrefDiscipline.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportPrefStudenti.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportPrefStudentiOld.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportStudenti.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/InvalidLineException.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ProcesareNote.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Disciplina.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Optional.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Pachet.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Repartizare.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Student.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/IndexOptionaleReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/IndexReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/OptionalReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/RepartizareCSV.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/Report.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/ReportManager.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/StudentiReport.java" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/adminLogin.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/adminLogin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/discipline.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/erori.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/note.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/pachete.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/pref_discipline.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/pref_studenti1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/pref_studenti2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/input/studenti.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/pachete.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/pref_discipline.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/pref_studenti1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/classes/files/input/erori.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/files/input/erori.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/adminLogin.xhtml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/css/adminLogin.css" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/discipline.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/erori.txt" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/note.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/pachete.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/pref_discipline.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/pref_studenti1.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/pref_studenti2.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/input/studenti.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/pachete.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/pref_discipline.csv" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/pref_studenti1.csv" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/java/forms/Disciplines.java" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/home.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/index.jsp" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/procesare.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/files/preferinte_studenti_an2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/files/preferinte_studenti_an3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/resources/php/ldapLogin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/templates/algoritm.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/css/algoritm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/css/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/css/preForm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/css/procesare.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/css/semestru.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/css/student.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/files/an2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/files/an3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/files/preferinte_studenti_an2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/files/preferinte_studenti_an3.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/forms/Disciplines.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/images/fii-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/js/clientSideValidations.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/php/ldapLogin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/css/admin.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/css/algoritm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/css/home.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/css/preForm.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/css/procesare.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/css/semestru.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/css/student.css" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/files/an2.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/files/an3.txt" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/files/preferinte_studenti_an2.csv" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/Disciplines.class" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/images/fii-logo.png" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/js/clientSideValidations.js" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/php/ldapLogin.php" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/commons-codec-1.10.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/curvesapi-1.03.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/poi-3.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/poi-ooxml-3.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/poi-ooxml-schemas-3.14.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/stax-api-1.0.1.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/lib/xmlbeans-2.6.0.jar" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/home.xhtml" afterPath="" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/target/course-allocations/templates/algoritm.xhtml" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/authorizationsFilter/AuthorizationFilter.class" afterPath="$PROJECT_DIR$/target/classes/authorizationsFilter/AuthorizationFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/commons/AddMessage.class" afterPath="$PROJECT_DIR$/target/classes/commons/AddMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/commons/CommonDataForm.class" afterPath="$PROJECT_DIR$/target/classes/commons/CommonDataForm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/commons/Constants.class" afterPath="$PROJECT_DIR$/target/classes/commons/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/commons/DatabaseActions.class" afterPath="$PROJECT_DIR$/target/classes/commons/DatabaseActions.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/commons/ReadFromFile.class" afterPath="$PROJECT_DIR$/target/classes/commons/ReadFromFile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/commons/WriteToFile.class" afterPath="$PROJECT_DIR$/target/classes/commons/WriteToFile.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/forms/FormController.class" afterPath="$PROJECT_DIR$/target/classes/forms/FormController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/forms/PreFormController.class" afterPath="$PROJECT_DIR$/target/classes/forms/PreFormController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/forms/StudentFormController.class" afterPath="$PROJECT_DIR$/target/classes/forms/StudentFormController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/forms/StudentViewController.class" afterPath="$PROJECT_DIR$/target/classes/forms/StudentViewController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/forms/Subject.class" afterPath="$PROJECT_DIR$/target/classes/forms/Subject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/login/LdapAuthentication.class" afterPath="$PROJECT_DIR$/target/classes/login/LdapAuthentication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/login/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/login/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/login/LoginDAO.class" afterPath="$PROJECT_DIR$/target/classes/login/LoginDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/login/NavigationController.class" afterPath="$PROJECT_DIR$/target/classes/login/NavigationController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/login/User.class" afterPath="$PROJECT_DIR$/target/classes/login/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations.war" afterPath="$PROJECT_DIR$/target/course-allocations.war" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/authorizationsFilter/AuthorizationFilter.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/authorizationsFilter/AuthorizationFilter.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/AddMessage.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/AddMessage.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/CommonDataForm.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/CommonDataForm.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/Constants.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/Constants.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/DatabaseActions.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/DatabaseActions.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/ReadFromFile.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/ReadFromFile.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/WriteToFile.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/commons/WriteToFile.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/FormController.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/FormController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/PreFormController.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/PreFormController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/StudentFormController.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/StudentFormController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/StudentViewController.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/StudentViewController.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/Subject.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/forms/Subject.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/LdapAuthentication.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/LdapAuthentication.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/LoginController.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/LoginController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/LoginDAO.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/LoginDAO.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/NavigationController.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/NavigationController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/User.class" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/login/User.class" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/artifacts/DegreeProject_war_exploded.xml" afterPath="$PROJECT_DIR$/.idea/artifacts/DegreeProject_war_exploded.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/compiler.xml" afterPath="$PROJECT_DIR$/.idea/compiler.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/misc.xml" afterPath="$PROJECT_DIR$/.idea/misc.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/DegreeProject.iml" afterPath="$PROJECT_DIR$/DegreeProject.iml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/pom.xml" afterPath="$PROJECT_DIR$/pom.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/commons/Constants.java" afterPath="$PROJECT_DIR$/src/main/java/commons/Constants.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java" afterPath="$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/commons/WriteToFile.java" afterPath="$PROJECT_DIR$/src/main/java/commons/WriteToFile.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/forms/FormController.java" afterPath="$PROJECT_DIR$/src/main/java/forms/FormController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/forms/PreFormController.java" afterPath="$PROJECT_DIR$/src/main/java/forms/PreFormController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/forms/StudentFormController.java" afterPath="$PROJECT_DIR$/src/main/java/forms/StudentFormController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/forms/Subject.java" afterPath="$PROJECT_DIR$/src/main/java/forms/Subject.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/login/LdapAuthentication.java" afterPath="$PROJECT_DIR$/src/main/java/login/LdapAuthentication.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/login/LoginController.java" afterPath="$PROJECT_DIR$/src/main/java/login/LoginController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/login/LoginDAO.java" afterPath="$PROJECT_DIR$/src/main/java/login/LoginDAO.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/login/NavigationController.java" afterPath="$PROJECT_DIR$/src/main/java/login/NavigationController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/home.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/css/preForm.css" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/preForm.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/js/clientSideValidations.js" afterPath="$PROJECT_DIR$/src/main/webapp/resources/js/clientSideValidations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/files/an2.txt" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/an2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/resources/files/an3.txt" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/an3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/studentLogin.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/studentLogin.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/admin.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/admin.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/preForm.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/preForm.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/semestrul1Form.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/semestrul1Form.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/semestrul2Form.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/semestrul2Form.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/studentAn2View.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/studentAn2View.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/studentAn3View.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/studentAn3View.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/templates/vizualizeazaOptionale.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/vizualizeazaOptionale.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/target/course-allocations/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/resources/css/admin.css" afterPath="$PROJECT_DIR$/target/course-allocations/resources/css/admin.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/resources/css/home.css" afterPath="$PROJECT_DIR$/target/course-allocations/resources/css/home.css" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/resources/css/preForm.css" afterPath="$PROJECT_DIR$/target/course-allocations/resources/css/preForm.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/resources/js/clientSideValidations.js" afterPath="$PROJECT_DIR$/target/course-allocations/resources/js/clientSideValidations.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/resources/files/an2.txt" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/an2.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/resources/files/an3.txt" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/an3.txt" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/studentLogin.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/studentLogin.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/templates/admin.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/admin.xhtml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/templates/preForm.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/preForm.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/templates/semestrul1Form.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/semestrul1Form.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/templates/semestrul2Form.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/semestrul2Form.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/templates/studentAn2View.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/studentAn2View.xhtml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/templates/studentAn3View.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/studentAn3View.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/course-allocations/templates/vizualizeazaOptionale.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/vizualizeazaOptionale.xhtml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/maven-archiver/pom.properties" afterPath="$PROJECT_DIR$/target/maven-archiver/pom.properties" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/authorizationFilter/AuthorizationFilter.java" afterPath="$PROJECT_DIR$/src/main/java/authorizationsFilter/AuthorizationFilter.java" />
-      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/java/forms/CommonDataForm.java" afterPath="$PROJECT_DIR$/src/main/java/commons/CommonDataForm.java" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/src/main/webapp/templates/procesare.xhtml" afterPath="$PROJECT_DIR$/src/main/webapp/templates/repartizare.xhtml" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/course-allocations/WEB-INF/classes/files/preferinte_studenti_an3.csv" afterPath="$PROJECT_DIR$/target/course-allocations/resources/files/pref_studenti2.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/course-allocations/resources/css/procesare.css" afterPath="$PROJECT_DIR$/target/course-allocations/resources/css/repartizare.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/course-allocations/resources/files/preferinte_studenti_an2.csv" afterPath="$PROJECT_DIR$/src/main/webapp/resources/files/pref_studenti2.csv" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/course-allocations/resources/files/preferinte_studenti_an3.csv" afterPath="$PROJECT_DIR$/src/main/webapp/resources/css/repartizare.css" />
+      <change type="MOVED" beforePath="$PROJECT_DIR$/target/course-allocations/templates/procesare.xhtml" afterPath="$PROJECT_DIR$/target/course-allocations/templates/repartizare.xhtml" />
     </list>
     <ignored path="DegreeProject.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -74,25 +286,84 @@
   </component>
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FavoritesManager">
-    <favorites_list name="DegreeProject" />
+    <favorites_list name="DegreeProject">
+      <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+        <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+            <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/util" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/util/Tools.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/Main.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/new_sample" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/new_sample/FirmsWorkersProblem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/new_sample/StableRoommatesProblem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/new_sample/CollegeAdmissionProblem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/new_sample/CourseAllocationProblem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/RandomProblemFactory.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/StableMarriageProblem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/CriticalEdgeSetProblem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/HRArtificialDataSkewed.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/HRArtificialDataUniform.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/HospitalResidentsProblem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/StudentProjectAllocation.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/SMArtificialDataWorstCase.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/sample/HospitalResidentsArtificialData.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/choco" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+                  <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/choco/StableMarriageChocoSolver.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                  <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/choco/StableMarriageChocoSolver1.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                </favorite_root>
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/KiralySolver1.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/KiralySolver2.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/GaleShapleySolver.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/StableMarriageCSPSolver.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+                <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/solver/HospitalResidentsCSPSolver.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              </favorite_root>
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Tie.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Pair.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Solver.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Element.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Problem.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Matching.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Partition.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/Preference.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/XSMPReader.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/XSMPWriter.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/InvalidMatchingException.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/InvalidElementIdException.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/InvalidPartitionException.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/DuplicateElementIdException.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+              <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/ro/infoiasi/sm/InvalidPreferenceListException.class" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+            </favorite_root>
+          </favorite_root>
+        </favorite_root>
+        <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/META-INF" type="directory" klass="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode">
+          <favorite_root url="jar://E:/Facultate/Licenta/RepartizareOptionale/lib/StableMatching.jar!/META-INF/MANIFEST.MF" type="psiFile" klass="com.intellij.ide.projectView.impl.nodes.PsiFileNode" />
+        </favorite_root>
+      </favorite_root>
+    </favorites_list>
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="preferinte_studenti_an3.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/preferinte_studenti_an3.csv">
+      <file leaf-file-name="repartizare.xhtml" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/repartizare.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+            <state vertical-scroll-proportion="-2.8076923">
+              <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="studentFormAn2.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentFormAn2.xhtml">
+      <file leaf-file-name="LdapAuthentication.java" pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/src/main/java/login/LdapAuthentication.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
-              <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+            <state vertical-scroll-proportion="0.6415094">
+              <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
               <folding />
             </state>
           </provider>
@@ -101,79 +372,106 @@
       <file leaf-file-name="admin.xhtml" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/admin.xhtml">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.730769">
-              <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
+            <state vertical-scroll-proportion="0.0">
+              <caret line="73" column="126" selection-start-line="73" selection-start-column="126" selection-end-line="73" selection-end-column="126" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="semestrul1Form.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/semestrul1Form.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-5.769231">
-              <caret line="41" column="87" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="semestrul2Form.xhtml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/semestrul2Form.xhtml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-7.1923075">
-              <caret line="11" column="21" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="21" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="ReadFromFile.java" pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="-2.9162304">
-              <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="Subject.java" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/forms/Subject.java">
+      <file leaf-file-name="Repartizare.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Repartizare.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+              <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+              <folding>
+                <element signature="e#0#7807#0" expanded="false" />
+                <element signature="e#3382#3383#0" expanded="false" />
+                <element signature="e#3413#3414#0" expanded="false" />
+                <element signature="e#3505#3506#0" expanded="false" />
+                <element signature="e#3560#3561#0" expanded="false" />
+                <element signature="e#3661#3662#0" expanded="false" />
+                <element signature="e#3701#3702#0" expanded="false" />
+                <element signature="e#3789#3790#0" expanded="false" />
+                <element signature="e#3841#3842#0" expanded="false" />
+                <element signature="e#3940#3941#0" expanded="false" />
+                <element signature="e#3979#3980#0" expanded="false" />
+                <element signature="e#4086#4087#0" expanded="false" />
+                <element signature="e#4128#4129#0" expanded="false" />
+                <element signature="e#6448#6449#0" expanded="false" />
+                <element signature="e#6480#6481#0" expanded="false" />
+                <element signature="e#6558#6559#0" expanded="false" />
+                <element signature="e#6594#6595#0" expanded="false" />
+                <element signature="e#7106#7107#0" expanded="false" />
+                <element signature="e#7143#7144#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="RepartizareProblem.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/RepartizareProblem.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+              <folding>
+                <element signature="e#0#4140#0" expanded="false" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ReportManager.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/ReportManager.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="admin.css" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/admin.css">
+      <file leaf-file-name="IndexReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/IndexReport.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
+              <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+              <folding>
+                <element signature="e#863#864#0" expanded="true" />
+                <element signature="e#916#917#0" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="OptionalReport.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/OptionalReport.java">
+          <provider selected="true" editor-type-id="text-editor">
+            <state vertical-scroll-proportion="0.0">
+              <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="pom.xml" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
+      <file leaf-file-name="Report.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/Report.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+              <caret line="70" column="54" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="preferinte_studenti_an2.csv" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/preferinte_studenti_an2.csv">
+      <file leaf-file-name="Application.java" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/Application.java">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.0">
-              <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-              <folding />
+              <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
+              <folding>
+                <element signature="imports" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -205,17 +503,48 @@
         <option value="$PROJECT_DIR$/src/main/webapp/templates/studentFormAn2.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/student.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/css/admin.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/templates/admin.xhtml" />
         <option value="$PROJECT_DIR$/src/main/java/commons/DatabaseActions.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/commons/Constants.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/resources/files/preferinte_studenti_an2.csv" />
-        <option value="$PROJECT_DIR$/src/main/java/commons/WriteToFile.java" />
-        <option value="$PROJECT_DIR$/src/main/java/forms/StudentFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/Report.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/files/an2.txt" />
+        <option value="$PROJECT_DIR$/src/main/java/forms/FavDisciplines.java" />
+        <option value="$PROJECT_DIR$/src/main/java/forms/FavDiscipline.java" />
+        <option value="$PROJECT_DIR$/src/main/java/forms/Subject.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/studentAn2View.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/studentAn3View.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/preForm.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/vizualizeazaOptionale.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportPrefDiscipline.java" />
+        <option value="$PROJECT_DIR$/src/main/java/login/SendEmailService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/login/LoginDAO.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/home.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/home.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/studentLogin.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/css/adminLogin.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/adminLogin.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/commons/CommonDataForm.java" />
+        <option value="$PROJECT_DIR$/src/main/java/forms/FormController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/login/LoginController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/semestrul1Form.xhtml" />
         <option value="$PROJECT_DIR$/src/main/webapp/templates/semestrul2Form.xhtml" />
-        <option value="$PROJECT_DIR$/src/main/java/forms/Subject.java" />
-        <option value="$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/files/inputAlgoritm/pachete.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/commons/WriteToFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/forms/StudentFormController.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/files/inputAlgoritm/pref_studenti2.csv" />
+        <option value="$PROJECT_DIR$/src/main/webapp/resources/files/inputAlgoritm/pref_studenti1.csv" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportFile.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Repartizare.java" />
+        <option value="$PROJECT_DIR$/src/main/java/commons/Constants.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/admin.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/procesare.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/login/NavigationController.java" />
+        <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/repartizare/RepartitionController.java" />
+        <option value="$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/Application.java" />
+        <option value="$PROJECT_DIR$/src/main/webapp/templates/repartizare.xhtml" />
+        <option value="$PROJECT_DIR$/src/main/java/login/LdapAuthentication.java" />
       </list>
     </option>
   </component>
@@ -243,10 +572,56 @@
       </MavenImportingSettings>
     </option>
   </component>
+  <component name="MavenProjectNavigator">
+    <treeState>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="course-allocations Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Dependencies" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$DependenciesNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="course-allocations Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Plugins" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$PluginsNode" />
+        </PATH_ELEMENT>
+      </PATH>
+      <PATH>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$RootNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="course-allocations Maven Webapp" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$ProjectNode" />
+        </PATH_ELEMENT>
+        <PATH_ELEMENT>
+          <option name="myItemId" value="Lifecycle" />
+          <option name="myItemType" value="org.jetbrains.idea.maven.navigator.MavenProjectsStructure$LifecycleNode" />
+        </PATH_ELEMENT>
+      </PATH>
+    </treeState>
+  </component>
   <component name="ProjectFrameBounds">
     <option name="x" value="-8" />
     <option name="y" value="-8" />
-    <option name="width" value="1378" />
+    <option name="width" value="1382" />
     <option name="height" value="744" />
   </component>
   <component name="ProjectLevelVcsManager" settingsEditedManually="false">
@@ -256,7 +631,7 @@
     <OptionsSetting value="true" id="Update" />
     <OptionsSetting value="true" id="Status" />
     <OptionsSetting value="true" id="Edit" />
-    <ConfirmationsSetting value="0" id="Add" />
+    <ConfirmationsSetting value="1" id="Add" />
     <ConfirmationsSetting value="0" id="Remove" />
   </component>
   <component name="ProjectView">
@@ -274,9 +649,6 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scratches" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -361,71 +733,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="files" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="webapp" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="resources" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="css" />
+              <option name="myItemId" value="java" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -469,81 +777,42 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="forms" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="commons" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="DegreeProject" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="src" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="main" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="java" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="authorizationsFilter" />
+              <option name="myItemId" value="lib" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scratches" />
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
     <property name="aspect.path.notification.shown" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="E:/Facultate/Licenta/StableMatching.jar!/" />
+    <property name="project.structure.last.edited" value="Libraries" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="settings.editor.selected.configurable" value="preferences.keymap" />
+    <property name="settings.editor.splitter.proportion" value="0.2" />
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files" />
+      <recent name="E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\inputAlgoritm" />
       <recent name="E:\IdeaProjects\DegreeProject\src\main\webapp\resources\css" />
+    </key>
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="E:\IdeaProjects\DegreeProject\src\main\webapp\resources\files\input" />
+      <recent name="E:\IdeaProjects\DegreeProject\src\main\java\ro\info\uaic\opt\report" />
+      <recent name="E:\IdeaProjects\DegreeProject\src\main\java\ro\info\uaic\opt\model" />
+      <recent name="E:\IdeaProjects\DegreeProject\src\main\java\ro\info\uaic\opt\input" />
+      <recent name="E:\IdeaProjects\DegreeProject\src\main\java\ro\info\uaic\opt" />
     </key>
   </component>
   <component name="RunManager" selected="Tomcat Server.Tomcat">
@@ -1071,44 +1340,59 @@
       <workItem from="1466159441125" duration="248000" />
       <workItem from="1466159726322" duration="6233000" />
       <workItem from="1466167128237" duration="11002000" />
-      <workItem from="1466188176992" duration="1433000" />
+      <workItem from="1466188176992" duration="4693000" />
+      <workItem from="1466194259202" duration="1022000" />
+      <workItem from="1466232250324" duration="705000" />
+      <workItem from="1466232996075" duration="3700000" />
+      <workItem from="1466236806500" duration="3215000" />
+      <workItem from="1466408067910" duration="802000" />
+      <workItem from="1466409317805" duration="6335000" />
+      <workItem from="1466429999840" duration="19760000" />
+      <workItem from="1466490849958" duration="21492000" />
+      <workItem from="1466524642533" duration="8303000" />
+      <workItem from="1466575240427" duration="314000" />
+      <workItem from="1466594958570" duration="480000" />
+      <workItem from="1466599203029" duration="1165000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="18916000" />
+    <option name="totallyTimeSpent" value="89469000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="-8" y="-8" width="1378" height="744" extended-state="0" />
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.20409712" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32733223" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Java Enterprise" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.42062193" sideWeight="0.5030349" order="7" side_tool="true" content_ui="tabs" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="CDI" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
+      <window_info id="Designer" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2753404" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Bean Validation" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="true" content_ui="tabs" />
+      <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24962063" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="JSF" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32928678" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33878887" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
+      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33878887" sideWeight="0.4969651" order="3" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32569557" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.1816694" sideWeight="0.4969651" order="2" side_tool="false" content_ui="tabs" />
+      <window_info id="Thumbnails" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.3289689" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
     </layout>
   </component>
   <component name="Vcs.Log.UiProperties">
@@ -1124,7 +1408,80 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="16" />
+      <breakpoints>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Pachet.java</url>
+          <properties />
+          <option name="timeStamp" value="16" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>83</line>
+          <properties />
+          <option name="timeStamp" value="26" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>30</line>
+          <properties />
+          <option name="timeStamp" value="31" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>28</line>
+          <properties />
+          <option name="timeStamp" value="32" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>33</line>
+          <properties />
+          <option name="timeStamp" value="33" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>38</line>
+          <properties />
+          <option name="timeStamp" value="34" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>40</line>
+          <properties />
+          <option name="timeStamp" value="35" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>43</line>
+          <properties />
+          <option name="timeStamp" value="36" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>48</line>
+          <properties />
+          <option name="timeStamp" value="38" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>50</line>
+          <properties />
+          <option name="timeStamp" value="39" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>53</line>
+          <properties />
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" type="java-line">
+          <url>file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java</url>
+          <line>61</line>
+          <properties />
+          <option name="timeStamp" value="41" />
+        </line-breakpoint>
+      </breakpoints>
+      <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1133,197 +1490,143 @@
     <option name="FILTER_TARGETS" value="false" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/authorizationsFilter/AuthorizationFilter.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="110" column="28" selection-start-line="110" selection-start-column="28" selection-end-line="110" selection-end-column="28" />
-          <folding>
-            <element signature="e#3939#3940#0" expanded="true" />
-            <element signature="e#3966#3967#0" expanded="true" />
-          </folding>
+          <caret line="31" column="124" selection-start-line="31" selection-start-column="8" selection-end-line="31" selection-end-column="124" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/forms/StudentViewController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/java/commons/CommonDataForm.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="46" selection-start-line="18" selection-start-column="19" selection-end-line="18" selection-end-column="46" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getSize#0;class#StudentViewController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/forms/StudentFormController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="100" column="0" selection-start-line="100" selection-start-column="0" selection-end-line="100" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentFormAn2.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="11" column="85" selection-start-line="11" selection-start-column="85" selection-end-line="11" selection-end-column="85" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentFormAn3.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://C:/Program Files/Java/jdk1.8.0_60/src.zip!/java/lang/NumberFormatException.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.59947646">
-          <caret line="64" column="0" selection-start-line="64" selection-start-column="0" selection-end-line="64" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/an3.txt">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-4.283077">
-          <caret line="18" column="0" selection-start-line="18" selection-start-column="0" selection-end-line="18" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/home.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/forms/StudentViewController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="28" selection-start-line="28" selection-start-column="28" selection-end-line="28" selection-end-column="28" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="method#getSize#0;class#StudentViewController#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentAn3View.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="53.115383">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/inscriereOptionale.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-3.8846154">
-          <caret line="48" column="72" selection-start-line="48" selection-start-column="72" selection-end-line="48" selection-end-column="72" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/preForm.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-24.846153">
-          <caret line="38" column="73" selection-start-line="38" selection-start-column="73" selection-end-line="38" selection-end-column="73" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/vizualizeazaOptionale.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="32.73077">
-          <caret line="37" column="44" selection-start-line="37" selection-start-column="44" selection-end-line="37" selection-end-column="44" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentAn2View.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.64325845">
-          <caret line="107" column="18" selection-start-line="107" selection-start-column="18" selection-end-line="107" selection-end-column="18" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/procesare.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="17" column="54" selection-start-line="17" selection-start-column="8" selection-end-line="17" selection-end-column="54" />
-          <folding>
-            <marker date="1465845640679" expanded="true" signature="172:1343" placeholder="..." />
-            <marker date="1465845640679" expanded="true" signature="364:489" placeholder="..." />
-            <marker date="1465845640679" expanded="true" signature="512:1335" placeholder="..." />
-            <marker date="1465845640679" expanded="true" signature="538:659" placeholder="..." />
-            <marker date="1465845640679" expanded="true" signature="700:1325" placeholder="..." />
-            <marker date="1465845640679" expanded="true" signature="720:1188" placeholder="..." />
-            <marker date="1465845640679" expanded="true" signature="1237:1311" placeholder="..." />
-            <marker date="1465845640679" expanded="true" signature="1263:1292" placeholder="..." />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentFormAn3.xhtml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.5">
-          <caret line="16" column="99" selection-start-line="16" selection-start-column="99" selection-end-line="16" selection-end-column="99" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/student.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.8461537">
           <caret line="12" column="0" selection-start-line="12" selection-start-column="0" selection-end-line="12" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportPrefStudenti.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="51" column="21" selection-start-line="51" selection-start-column="21" selection-end-line="51" selection-end-column="21" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/forms/FormController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="125" column="6" selection-start-line="125" selection-start-column="6" selection-end-line="125" selection-end-column="6" />
+          <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/login/LoginController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.04450262">
-          <caret line="33" column="0" selection-start-line="33" selection-start-column="0" selection-end-line="33" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="0.6608479">
+          <caret line="96" column="26" selection-start-line="96" selection-start-column="26" selection-end-line="96" selection-end-column="26" />
+          <folding>
+            <element signature="e#4755#4756#0" expanded="false" />
+            <element signature="e#4786#4787#0" expanded="false" />
+            <element signature="e#4847#4848#0" expanded="false" />
+            <element signature="e#4898#4899#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commons/DatabaseActions.java">
+    <entry file="jar://$MAVEN_REPOSITORY$/com/sun/faces/jsf-impl/2.2.2/jsf-impl-2.2.2.jar!/com/sun/faces/util/Util.class">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.3115183">
-          <caret line="7" column="0" selection-start-line="7" selection-start-column="0" selection-end-line="7" selection-end-column="0" />
-          <folding />
+        <state vertical-scroll-proportion="-6.814815">
+          <caret line="633" column="0" selection-start-line="633" selection-start-column="0" selection-end-line="633" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/semestrul1Form.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-23.5">
+          <caret line="95" column="48" selection-start-line="95" selection-start-column="48" selection-end-line="95" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/semestrul2Form.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-34.653847">
+          <caret line="53" column="48" selection-start-line="53" selection-start-column="48" selection-end-line="53" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/vizualizeazaOptionale.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.307692">
+          <caret line="5" column="8" selection-start-line="5" selection-start-column="8" selection-end-line="5" selection-end-column="8" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentFormAn3.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="18.346153">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/an2.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="2" selection-start-line="6" selection-start-column="2" selection-end-line="6" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/an3.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentFormAn2.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.65384614">
+          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentAn2View.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-11.615385">
+          <caret line="63" column="108" selection-start-line="63" selection-start-column="108" selection-end-line="63" selection-end-column="108" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentAn3View.xhtml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.03846154">
+          <caret line="73" column="83" selection-start-line="73" selection-start-column="70" selection-end-line="73" selection-end-column="83" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportPachete.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/InvalidLineException.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="13" selection-start-line="22" selection-start-column="13" selection-end-line="22" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ProcesareNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="29" column="13" selection-start-line="29" selection-start-column="13" selection-end-line="29" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/forms/StudentFormController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="240" column="0" selection-start-line="240" selection-start-column="0" selection-end-line="240" selection-end-column="0" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/authorizationsFilter/AuthorizationFilter.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="31" column="124" selection-start-line="31" selection-start-column="7" selection-end-line="31" selection-end-column="124" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commons/Constants.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="18" column="10" selection-start-line="18" selection-start-column="10" selection-end-line="18" selection-end-column="10" />
+          <caret line="257" column="34" selection-start-line="257" selection-start-column="34" selection-end-line="257" selection-end-column="34" />
           <folding />
         </state>
       </provider>
@@ -1331,93 +1634,350 @@
     <entry file="file://$PROJECT_DIR$/src/main/java/commons/WriteToFile.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="85" column="114" selection-start-line="85" selection-start-column="114" selection-end-line="85" selection-end-column="114" />
-          <folding>
-            <element signature="method#writeOptionale#0;class#WriteToFile#0" expanded="false" />
-            <element signature="method#writeOptionaleToFile#0;class#WriteToFile#0" expanded="false" />
-          </folding>
+          <caret line="86" column="24" selection-start-line="86" selection-start-column="24" selection-end-line="86" selection-end-column="24" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/preferinte_studenti_an3.csv">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/pachete.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="6" column="3" selection-start-line="6" selection-start-column="3" selection-end-line="6" selection-end-column="3" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/pref_studenti1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="76" selection-start-line="0" selection-start-column="76" selection-end-line="0" selection-end-column="76" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/pref_studenti2.csv">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/input/pref_studenti1.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/input/erori.txt">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/pref_discipline.csv">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="22" column="17" selection-start-line="22" selection-start-column="17" selection-end-line="22" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Student.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="26" selection-start-line="26" selection-start-column="26" selection-end-line="26" selection-end-column="26" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/studentFormAn2.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Pachet.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="7" column="48" selection-start-line="7" selection-start-column="48" selection-end-line="7" selection-end-column="48" />
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Optional.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="32" column="40" selection-start-line="32" selection-start-column="32" selection-end-line="32" selection-end-column="40" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Disciplina.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="26" column="13" selection-start-line="26" selection-start-column="13" selection-end-line="26" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportNote.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="36" column="28" selection-start-line="36" selection-start-column="28" selection-end-line="36" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportFile.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="40" column="36" selection-start-line="40" selection-start-column="36" selection-end-line="40" selection-end-column="36" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/input/ImportDiscipline.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="13" selection-start-line="28" selection-start-column="13" selection-end-line="28" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/commons/Constants.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="71" selection-start-line="24" selection-start-column="71" selection-end-line="24" selection-end-column="71" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/login/NavigationController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="44" column="40" selection-start-line="44" selection-start-column="40" selection-end-line="44" selection-end-column="40" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/css/admin.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="30" column="5" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
-          <folding />
+        <state vertical-scroll-proportion="-4.8846154">
+          <caret line="35" column="1" selection-start-line="35" selection-start-column="1" selection-end-line="35" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$PROJECT_DIR$/src/lib/StableMatching.jar!/ro/infoiasi/sm/Problem.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="51.703705">
+          <caret line="6" column="0" selection-start-line="6" selection-start-column="0" selection-end-line="6" selection-end-column="0" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="62" column="16" selection-start-line="62" selection-start-column="16" selection-end-line="62" selection-end-column="16" />
+        <state vertical-scroll-proportion="-9.153846">
+          <caret line="79" column="0" selection-start-line="79" selection-start-column="0" selection-end-line="80" selection-end-column="0" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/resources/files/preferinte_studenti_an2.csv">
+    <entry file="jar://$MAVEN_REPOSITORY$/org/freemarker/freemarker/2.3.23/freemarker-2.3.23.jar!/freemarker/template/Configuration.class">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-5.7580647">
+          <caret line="69" column="13" selection-start-line="69" selection-start-column="13" selection-end-line="69" selection-end-column="13" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/IndexOptionaleReport.java">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <caret line="36" column="10" selection-start-line="36" selection-start-column="10" selection-end-line="36" selection-end-column="10" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/repartizare/RepartitionController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/OptionalReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="13" selection-start-line="24" selection-start-column="13" selection-end-line="24" selection-end-column="13" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/IndexReport.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="24" column="11" selection-start-line="24" selection-start-column="11" selection-end-line="24" selection-end-column="11" />
+          <folding>
+            <element signature="e#863#864#0" expanded="true" />
+            <element signature="e#916#917#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/Application.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="64" column="42" selection-start-line="64" selection-start-column="42" selection-end-line="64" selection-end-column="42" />
+          <folding>
+            <element signature="imports" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/model/Repartizare.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="84" column="25" selection-start-line="84" selection-start-column="25" selection-end-line="84" selection-end-column="25" />
+          <folding>
+            <element signature="e#0#7807#0" expanded="false" />
+            <element signature="e#3382#3383#0" expanded="false" />
+            <element signature="e#3413#3414#0" expanded="false" />
+            <element signature="e#3505#3506#0" expanded="false" />
+            <element signature="e#3560#3561#0" expanded="false" />
+            <element signature="e#3661#3662#0" expanded="false" />
+            <element signature="e#3701#3702#0" expanded="false" />
+            <element signature="e#3789#3790#0" expanded="false" />
+            <element signature="e#3841#3842#0" expanded="false" />
+            <element signature="e#3940#3941#0" expanded="false" />
+            <element signature="e#3979#3980#0" expanded="false" />
+            <element signature="e#4086#4087#0" expanded="false" />
+            <element signature="e#4128#4129#0" expanded="false" />
+            <element signature="e#6448#6449#0" expanded="false" />
+            <element signature="e#6480#6481#0" expanded="false" />
+            <element signature="e#6558#6559#0" expanded="false" />
+            <element signature="e#6594#6595#0" expanded="false" />
+            <element signature="e#7106#7107#0" expanded="false" />
+            <element signature="e#7143#7144#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/RepartizareProblem.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="38" column="13" selection-start-line="38" selection-start-column="13" selection-end-line="38" selection-end-column="13" />
+          <folding>
+            <element signature="e#0#4140#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/ReportManager.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="107" column="38" selection-start-line="107" selection-start-column="38" selection-end-line="107" selection-end-column="38" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/ro/info/uaic/opt/report/Report.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="70" column="54" selection-start-line="70" selection-start-column="54" selection-end-line="70" selection-end-column="54" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/admin.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.730769">
-          <caret line="56" column="53" selection-start-line="56" selection-start-column="53" selection-end-line="56" selection-end-column="53" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/forms/Subject.java">
-      <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="9" column="23" selection-start-line="9" selection-start-column="23" selection-end-line="9" selection-end-column="23" />
+          <caret line="73" column="126" selection-start-line="73" selection-start-column="126" selection-end-line="73" selection-end-column="126" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/semestrul1Form.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/repartizare.xhtml">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-5.769231">
-          <caret line="41" column="87" selection-start-line="41" selection-start-column="87" selection-end-line="41" selection-end-column="87" />
+        <state vertical-scroll-proportion="-2.8076923">
+          <caret line="16" column="50" selection-start-line="16" selection-start-column="50" selection-end-line="16" selection-end-column="50" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/templates/semestrul2Form.xhtml">
+    <entry file="file://$PROJECT_DIR$/src/main/java/login/LdapAuthentication.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-7.1923075">
-          <caret line="11" column="21" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="21" />
+        <state vertical-scroll-proportion="0.6415094">
+          <caret line="34" column="27" selection-start-line="34" selection-start-column="27" selection-end-line="34" selection-end-column="27" />
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/commons/ReadFromFile.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-2.9162304">
-          <caret line="51" column="13" selection-start-line="51" selection-start-column="13" selection-end-line="51" selection-end-column="13" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
+  </component>
+  <component name="masterDetails">
+    <states>
+      <state key="ArtifactsStructureConfigurable.UI">
+        <settings>
+          <artifact-editor />
+          <last-edited>DegreeProject:war exploded</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+                <option value="0.5" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="FacetStructureConfigurable.UI">
+        <settings>
+          <last-edited>Web</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="GlobalLibrariesConfigurable.UI">
+        <settings>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="JdkListConfigurable.UI">
+        <settings>
+          <last-edited>1.8</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ModuleStructureConfigurable.UI">
+        <settings>
+          <last-edited>DegreeProject</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+      <state key="ProjectLibrariesConfigurable.UI">
+        <settings>
+          <last-edited>Maven: org.primefaces:primefaces:5.3</last-edited>
+          <splitter-proportions>
+            <option name="proportions">
+              <list>
+                <option value="0.2" />
+              </list>
+            </option>
+          </splitter-proportions>
+        </settings>
+      </state>
+    </states>
   </component>
 </project>

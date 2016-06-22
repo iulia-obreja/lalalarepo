@@ -31,7 +31,7 @@ POO
 PALG
 LOGICA
 
-MATLAB
+MCM
 http://profs.info.uaic.ro/~fliacob/An2/2015-2016/Resurse%20MCM_2016/
 Florin Iacob
 MATE

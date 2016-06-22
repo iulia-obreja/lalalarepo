@@ -4,7 +4,7 @@
 4
 I. NET
 http://profs.info.uaic.ro/~arusoaie.andrei/lectures/NET/DotNet.html 
-Andrei Arusoaie
+Arusoaie Andrei
 IP
 POO
 WEB
@@ -21,7 +21,7 @@ https://drive.google.com/drive/folders/0B-wLi0f-62T2T2doT19lekRJVWs
 Ioan Asiminoaie
 IPROG
 POO
-PAV
+PALG
 
 A3D
 http://profs.info.uaic.ro/~avitcu/ 
@@ -63,7 +63,7 @@ SD
 LOGICA
 PF
 PDJ
-http://profs.info.uaic.ro/~alaiba/pub/gdd-
+http://profs.info.uaic.ro/~alaiba/pub/gdd-2017/Descriere.pdf 
 Vasile Alaiba
 PALG
 IP
@@ -78,7 +78,7 @@ WEB
 
 PCPDIT
 https://drive.google.com/drive/folders/0B-wLi0f-62T2T2doT19lekRJVWs
-Nicoleta Armanu
+Nicoleta Armanu 
 IPROG
 LOGICA
 PALG
