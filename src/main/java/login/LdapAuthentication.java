@@ -25,14 +25,14 @@ public class LdapAuthentication {
 //    private String host = "ldap://172.17.17.15";
 //    private String baseDN = "dc=info,dc=uaic,dc=ro";
 //    private String username = "iulia.obreja";
-//    private String password = "Thefinishvacanta07";
+//    private String password = "";
 //    private String dn;
 
     public void authentication() {
 
         String baseDN = "dc=info,dc=uaic,dc=ro";
         String username = "iulia.obreja";
-        String password = "Thefinishvacanta07";
+        String password = "";
         String dn;
         dn = "uid=" + username + ",ou=people," + baseDN;
         String host = "ldap://172.17.17.15";
